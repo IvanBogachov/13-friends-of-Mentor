@@ -1,3 +1,0 @@
-<section class="hero">
-  
-</section>
