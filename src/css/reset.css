@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -12,23 +20,29 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
-  color: currentColor;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
 }
 
 button {
+  display: block;
+  margin: 0;
+  padding: 0;
   cursor: pointer;
 }
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
