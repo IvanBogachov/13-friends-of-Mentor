@@ -137,6 +137,7 @@ body {
   height: 28px;
 }
 .swiper-button {
+  stroke: #3b3b3b;
   background-color: transparent;
   border: none;
 }
