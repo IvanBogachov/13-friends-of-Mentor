@@ -120,15 +120,15 @@ body {
 .about-swiper {
   margin-top: 32px;
 }
-.about-swiper-wrapper {
+.swiper-slide-container {
   display: flex;
 }
-.about-swiper-slide {
+.about-swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 130px;
+  width: 130px !important;
+  height: 130px !important;
   border-radius: 50%;
   border: 1px solid #fafafa66;
 }
@@ -140,6 +140,7 @@ body {
   stroke: #3b3b3b;
   background-color: transparent;
   border: none;
+  z-index: 999;
 }
 .about-swiper {
   position: relative;
@@ -148,4 +149,7 @@ body {
   position: absolute;
   top: 39%;
   left: 89%;
+}
+.about-swiper-wrapper {
+  overflow: hidden;
 }
