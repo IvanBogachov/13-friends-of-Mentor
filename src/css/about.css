@@ -132,7 +132,19 @@ body {
   border-radius: 50%;
   border: 1px solid #fafafa66;
 }
-
+.swiper-button-svg {
+  width: 28px;
+  height: 28px;
+}
 .swiper-button {
   background-color: transparent;
+  border: none;
+}
+.about-swiper {
+  position: relative;
+}
+.swiper-button {
+  position: absolute;
+  top: 39%;
+  left: 89%;
 }
