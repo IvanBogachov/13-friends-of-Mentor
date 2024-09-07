@@ -1,7 +1,6 @@
 <section class="about">
   <div class="container about-container">
     <h2 class="about-title">About me</h2>
-
     <div class="about-wrapper">
       <div class="about-text-content">
         <p class="about-text-content__ph">
@@ -12,9 +11,30 @@
         </p>
       </div>
       <div class="about-img-content">
-        <img class="about-img" src="/img/about-me-img.jpg" alt="My Photo" />
+        <picture>
+          <source
+            media="(min-width: 1440px )"
+            srcset="/img/image.jpg 1x, /img/image@2x.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/tablet-photo-about.jpg    1x,
+              /img/tablet-photo-about@2x.jpg 2x
+            "
+          />
+          <source
+            srcset="
+              /img/mobile-photo-about.jpg    1x,
+              /img/mobile-photo-about@2x.jpg 2x
+            "
+            media="(min-width: 375px)"
+          />
+          <img class="about-img" src="/img/image.jpg" alt="My Photo" />
+        </picture>
       </div>
     </div>
+
     <!-- accordion -->
     <ul class="accordion-about accordion-container">
       <li
@@ -118,22 +138,41 @@
     </ul>
 
     <!-- swiper -->
-    <div class="about-swiper">
+    <!-- <div class="about-me-wrapper">
+      <div class="swiper about-swiper swiper-horizontal">
         <ul class="swiper-slide-container swiper-wrapper">
           <li class="about-swiper-slide swiper-slide">HTML/CSS</li>
           <li class="about-swiper-slide swiper-slide">JavaScript</li>
-          <li class="about-swiper-slide swiper-slide">JavaScript</li>
-          <li class="about-swiper-slide swiper-slide">JavaScript</li>
-          <li class="about-swiper-slide swiper-slide">JavaScript</li>
-          <li class="about-swiper-slide swiper-slide">JavaScript</li>
-          <li class="about-swiper-slide swiper-slide">JavaScript</li>
+          <li class="about-swiper-slide swiper-slide">React</li>
+          <li class="about-swiper-slide swiper-slide">Node.js</li>
+          <li class="about-swiper-slide swiper-slide">React Native</li>
+          <li class="about-swiper-slide swiper-slide">Soft skills</li>
         </ul>
-      <div class="swiper-button-next">
-        <button class="swiper-button">
+        <button
+          type="button"
+          class="swiper-button-next"
+          id="swiper-button-by-id"
+        >
           <svg class="swiper-button-svg">
             <use href="/img/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </div>
+    </div> -->
+    <!-- Slider main container -->
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide">HTML/CSS</li>
+        <li class="swiper-slide">JavaScript</li>
+      </ul>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-next">
+        <svg width="28" height="28">
+          <use href="/img/sprite.svg#icon-arrow-right-bl"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
