@@ -1,3 +1,4 @@
+
 .title-bnf {
 font-weight: 600;
 font-size: 16px;
@@ -9,17 +10,19 @@ width: 284px;
 height: 24px;
 margin-bottom: 32px;
 }
+.bnf-right {
+width: 344px;
+height: 1215px;
+}
 .list-bnf {
 display: flex;
 flex-direction: column;
-gap: 16px;
-height: 1271px;
+row-gap: 16px;
 }
 .my-bnf {
 display: flex;
 flex-direction: column;
 border-radius: 20px;
-height: 270px;
 background: #242527;
 padding: 24px;
 }
@@ -45,11 +48,12 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.6);
-width: 296px;
 }
 .container-bnf {
 display: flex;
 flex-direction: column;
+width: 296px;
+height: 110px;
 }
 .btn-bnf {
 display: flex;
@@ -59,7 +63,7 @@ flex-direction: row;
 gap: 10px;
 border: 1px solid rgba(250, 250, 250, 0.2);
 border-radius: 60px;
-padding: 18px 36px;
+padding: 18px auto;
 width: 187px;
 height: 55px;
 font-weight: 500;
@@ -73,33 +77,36 @@ margin-top: 32px;
 
 
 @media screen and (min-width: 768px){
-.list-bnf {
-flex-direction: column;
-flex-wrap: wrap;
+.bnf-right {
 width: 704px;
-height: 731px;
-gap: 16px;
+height: 675px;
 }
-.my-bnf { 
-width: calc((100% - 16px) /2);
-width: 344px;
+.list-bnf {
+flex-direction: row;
+flex-wrap: wrap;
+column-gap: 16px;
 }
-.btn-bnf {
+.btn-bnf{
     margin-top: 64px;
 }
 }
-              
-@media screen and (min-width: 1440px)  {
-.desctop { 
-display: flex;
-justify-content: space-around;
-}
-.btn-bnf {
-    align-items: flex-end;
-
     
+
+@media screen and (min-width: 1440px)  {
+.benefits {
+    display: flex;
 }
-}  
+.title-bnf {
+    margin-right: 412px;
+}
+} 
+  
+
+
+
+
+
+
 
 
 
