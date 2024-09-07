@@ -16,23 +16,22 @@ const fetchReviews = async () => {
     console.log(err);
   }
 };
-// const swipers = new Swiper('.swiper', {
-//   direction: 'horizontal',
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-// const swiper = document.querySelector('.swiper').swiper;
+const swipers = new Swiper('.swiper', {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpointsBase: 'container',
+});
+const swiper = document.querySelector('.swiper').swiper;
 const greateReviews = info => {
   const reviewsValue = info
     .map(({ author, avatar_url, review }) => {
       return `<li class="reviews-item swiper-slide">
   <img class="reviews-img" src="${avatar_url}" alt="${author}" />
-  <div class="reviews-wrapper">
   <h3 class="reviews-name">${author}</h3>
   <p class="reviews-text">${review}</p>
-  </div>
 </li>`;
     })
     .join('');
