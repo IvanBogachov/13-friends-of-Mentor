@@ -1,8 +1,10 @@
 
 
-
+.hero {
+  background-image: url("/src/img/Hero-1x.png");
+}
 .main-title {
-  margin-top: 281px;
+  padding-top: 281px;
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
@@ -47,7 +49,7 @@
 }
 .hero-social {
  display: flex;
- margin-bottom: 32px;
+ padding-bottom: 32px;
  gap: 4px;
 
 }
@@ -58,6 +60,7 @@
     max-width: 768px;
   }
   .main-title {
+    padding-top: 300px;
     margin-left: 16px;
     font-size: 90px;
     margin-bottom: 187px;
@@ -74,6 +77,7 @@
     gap: 8px;
     margin-left: 231px;
     width: 473px;
+    padding-bottom: 32px;
   }
   .hero-email {
     border-radius: 60px;
