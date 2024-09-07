@@ -1,0 +1,95 @@
+.faq {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    /* Removed text-align: center; */
+}
+
+.accordion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.accordion-item {
+    border: 1px solid #333;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 32px);
+    background-color: #2a2a2a;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Assuming the library handles the arrow icons */
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .faq {
+        padding: 20px 40px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .faq {
+        padding: 20px;
+    }
+
+    .accordion-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .faq {
+        padding: 10px;
+    }
+
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion-item {
+        flex: 1 1 100%;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+    }
+
+    .accordion-content {
+        font-size: 14px;
+    }
+}
