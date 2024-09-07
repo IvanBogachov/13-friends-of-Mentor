@@ -6,7 +6,7 @@
   background-image: url(/img/img-covers/covers-background.png);
   position: relative;
   height: 508px;
-  width: 375px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -54,7 +54,6 @@
 @media screen and (min-width: 768px) {
   .covers {
     height: 960px;
-    width: 768px;
   }
 
   .covers-item {
@@ -74,10 +73,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .covers {
-    width: 1440px;
-  }
-
   .covers-item {
     animation-duration: 11s;
   }
