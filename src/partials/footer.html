@@ -2,10 +2,21 @@
     <div class="container">
         <div class="title-footer">
             <div class="img-span">
-                <img class="img-footer" srcset="
-            ./img/work-together-mobile-@1x-img.jpg 1x,
-            ./img/work-together-mobile-@2x-img.jpg 2x
-          " src="./img/work-together-mobile-@1x-img.jpg" alt="Jefferson" width="44" height="44" loading="lazy" />
+                <picture>
+                    <source 
+                    srcset="./img/work-together-dextop&tablet-@1x-img.jpg 1x,
+                            ./img/work-together-dextop&tablet-@2x-img.jpg 2x"  
+                    media="(min-width: 767px)">
+                    <img class="img-footer" 
+                        srcset="./img/work-together-mobile-@1x-img.jpg 1x,
+                                ./img/work-together-mobile-@2x-img.jpg 2x
+                        " src="./img/work-together-mobile-@1x-img.jpg" 
+                        alt="Jefferson" 
+                        width="44" 
+                        height="44" 
+                        loading="lazy" />
+                </picture>
+            
                 <h2 class="title-text-footer">
                     Let’s <span class="work-span">work</span>
                 </h2>
