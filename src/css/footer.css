@@ -1,0 +1,114 @@
+.footer{
+    padding-top: 51px;
+    padding-bottom: 32px;
+}
+.img-footer {
+    border-radius: 12px;
+}
+
+.img-span {
+    display: flex;
+    align-items: center;
+    /* Вирівнює текст і зображення по вертикалі */
+}
+
+.img-footer {
+
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    /* Додає відступ між картинкою і текстом */
+}
+
+.title-text-footer {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+
+}
+
+.work-span {
+    color: #ed3b44;
+}
+
+.title-footer {
+    padding-bottom: 63px;
+}
+
+.input-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+.form-footer{
+    padding-bottom: 64px;
+}
+
+input[type="email"],
+input[type="text"] {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    background-color: transparent;
+    border: none;
+    /* Видаляє рамку навколо інпуту */
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    /* Додає внутрішній відступ для зручності */
+    outline: none;
+    /* Прибирає зовнішню обводку під час фокусу */
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    /* Додає рамку тільки знизу */
+    width: 80vw;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+    color: rgba(250, 250, 250, 0.2);
+    /* Стилі для тексту placeholder */
+}
+
+.btn-footer-send {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+
+    border-radius: 100%;
+    background-color: #ed3b44;
+    border: transparent;
+    width: 100px;
+    height: 100px;
+
+}
+
+.contacts-list-footer {
+    display: flex;
+    gap: 4px;
+}
+
+.contact-item-footer {
+    font-style: normal;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: inherit;
+
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+}
