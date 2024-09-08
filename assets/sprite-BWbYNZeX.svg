@@ -1,12 +1,12 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<symbol id="icon-arrow-left" viewBox="0 0 32 32">
+<symbol id="icon-arrow-left" viewBox="0 0 33 32">
 <path stroke-width="2.6667" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M27.333 16h-21.333"></path>
 <path stroke-width="2.6667" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M14 24l-8-8 8-8"></path>
 </symbol>
-<symbol id="icon-arrow-right" viewBox="0 0 32 32">
-<path fill="none" stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1)" d="M5.333 16h21.333"></path>
-<path fill="none" stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1)" d="M18.667 8l8 8-8 8"></path>
+<symbol id="icon-arrow-right" viewBox="0 0 33 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6 16h21.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M19.333 8l8 8-8 8"></path>
 </symbol>
 <symbol id="icon-arrow-right-bl" viewBox="0 0 32 32">
 <path stroke-width="1.6" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M5.333 16h21.333"></path>
