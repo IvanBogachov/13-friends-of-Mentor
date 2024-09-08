@@ -1,4 +1,4 @@
-<section class="footer together">
+<section id="work_together" class=" footer together">
     <div class="container">
         <div class="title-footer">
             <div class="img-span">
@@ -24,17 +24,17 @@
             <h2 class="title-text-footer">together</h2>
         </div>
 
-        <form class="form-footer">
+        <form class="form-footer js-form-footer">
             <div class="input-container">
                 <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required
                     title="Invalid email, try again" />
-                <span class="email-message"></span>
+                <span class="email-message js-email-message"></span>
             
 
             <input type="text" name="comment" placeholder="comments" required maxlength="255"
                 title="Message should not exceed 255 characters" />
                 </div>
-            <button class="btn-footer-send" type="submit">Send</button>
+            <button id="openModalBtn" class="btn-footer-send js-btn-footer" type="submit">Send</button>
         </form>
         <address class="contacts-footer">
             <ul class="contacts-list-footer">
@@ -51,4 +51,18 @@
             </ul>
         </address>
     </div>
+    <!-- Модальне вікно -->
+    <div class="backdrop">
+        <div class="modal-content">
+            <button class="btnCloseModal">
+                <svg class="modal-close">
+                    <use href=""></use>
+                </svg>
+            </button>
+            <h2 class="title-modal">Thank you for your interest in cooperation!</h2>
+            <p class="text-modal">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+        </div>
+    </div>
 </section>
+
+
