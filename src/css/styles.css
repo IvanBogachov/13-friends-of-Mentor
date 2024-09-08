@@ -9,7 +9,6 @@
 @import url('./container.css');
 @import url('./common.css');
 
-
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
@@ -20,4 +19,3 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
-
