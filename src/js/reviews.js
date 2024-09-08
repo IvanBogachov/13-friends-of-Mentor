@@ -1,13 +1,12 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api/reviews';
 
 const reviewsList = document.querySelector('.reviews-list');
-const swiper = document.querySelector('.swiper').swiper;
 const nextBtn = document.querySelector('.s-button-next');
 const prevBtn = document.querySelector('.s-button-prev');
 
@@ -23,17 +22,6 @@ const fetchReviews = async () => {
     console.log(err);
   }
 };
-const swipers = new Swiper('.swiper', {
-  direction: 'horizontal',
-  navigation: {
-    nextEl: '.s-button-next',
-    prevEl: '.s-button-prev',
-  },
-  slidesPerView: 1,
-  spaceBetween: 20,
-  breakpointsBase: 'container',
-});
-
 const greateReviews = info => {
   const reviewsValue = info
     .map(({ author, avatar_url, review }) => {
@@ -46,5 +34,28 @@ const greateReviews = info => {
     .join('');
   reviewsList.insertAdjacentHTML('beforeend', reviewsValue);
 };
+const swiperOption = new Swiper('.swiper', {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  modules: [Navigation, Keyboard],
+  navigation: {
+    nextEl: '.s-button-next',
+    prevEl: '.s-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
+});
 
 fetchReviews();

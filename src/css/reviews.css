@@ -10,9 +10,9 @@
   align-items: center;
   gap: 32px;
 }
-.swiper ul {
+/* .swiper ul {
   gap: 16px;
-}
+} */
 .reviews-list li {
   display: inline-flex;
   flex-direction: column;
@@ -58,18 +58,20 @@ div .reviews-btn {
   justify-content: center;
   align-items: center;
   max-width: 116px;
+  gap: 12px;
 }
 .s-button-prev,
 .s-button-next {
   position: relative;
+  cursor: pointer;
 }
 .reviews-next,
 .reviews-prev {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
-  padding: 18px;
-  width: 68px;
-  height: 68px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
   stroke: white;
   fill: transparent;
 }
@@ -89,5 +91,8 @@ div .reviews-btn {
 @media (min-width: 1440px) {
   .reviews-list {
     max-width: 1440px;
+  }
+  .reviews-list li {
+    max-width: 332px;
   }
 }
