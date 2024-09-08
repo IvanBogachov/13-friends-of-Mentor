@@ -11,16 +11,15 @@
     color: rgba(250, 250, 250, 0.4);
 }
 
-.swiper-wrapper {
+
+.project-swiper-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.swiper-slide {
+.project-swiper-slide {
     border-radius: 24px;
-    width: 343px;
-    height: 812px;
     background: #fafafa;
     margin-bottom: 32px;
 }
@@ -42,9 +41,6 @@
     flex-direction: row;
     gap: 6px;
 
-    width: 279px;
-    height: 96px;
-
     margin-bottom: 96px;
 }
 
@@ -57,7 +53,7 @@
 
     border: 1px solid rgba(28, 29, 32, 0.2);
     border-radius: 60px;
-    width: 80px;
+    padding: 13px 18px;
     height: 45px;
 
     font-family: "Inter Tight", sans-serif;
@@ -108,10 +104,10 @@
 
 .project-nav-div {
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
 
-.swiper-button-next {
+.arrow-right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,32 +118,31 @@
     border-radius: 60px;
     width: 52px;
     height: 52px;
-}
-
-.swiper-button-prew {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    width: 52px;
-    height: 52px;
+    padding: 14px;
 
     fill: transparent;
-        stroke: #fafafa;
-        /* transition: ; */
+    stroke: #fafafa;
+}
+
+.arrow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+
+    fill: transparent;
+    stroke: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
-    .project-header {
-        margin-left: 23px;
-    }
-    
-    .swiper-slide {
-        width: 704px;
+
+    .project-swiper-slide {
+        margin-bottom: 64px;
     }
 
     .project-info-div {
@@ -156,16 +151,14 @@
         padding-top: 64px;
         padding-bottom: 64px;
     }
-    
+
     .technologies-list {
-        width: 312px;
-        height: 55px;
-        flex-wrap: nowrap;
+        margin-bottom: 164px;
     }
 
     .technologies-item {
-        width: 80px;
-        height: 55px
+        padding: 18px;
+        height: 55px;
     }
 
     .project-text {
@@ -184,19 +177,30 @@
         height: 625px;
     }
 
-    .swiper-button-next {
-        width: 68px;
-        height: 68px;
+    .project-nav-div {
+        gap: 20px;
     }
 
-    .swiper-button-prew {
+    .arrow-right {
+        width: 68px;
+        height: 68px;
+        padding: 18px;
+    }
+
+    .arrow-left {
         width: 68px;
         height: 68px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .swiper-slide {
+
+    .project-swiper-wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .project-swiper-slide {
         display: flex;
         justify-content: space-between;
         width: 1376px;
