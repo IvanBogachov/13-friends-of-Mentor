@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
   <div class="container about-container">
     <h2 class="about-title">About me</h2>
     <div class="about-wrapper">
@@ -14,23 +14,23 @@
         <picture>
           <source
             media="(min-width: 1440px )"
-            srcset="/img/image.jpg 1x, /img/image@2x.jpg 2x"
+            srcset="/img/about/image.jpg 1x, /img/about/image@2x.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
             srcset="
-              /img/tablet-photo-about.jpg    1x,
-              /img/tablet-photo-about@2x.jpg 2x
+              /img/about/tablet-photo-about.jpg    1x,
+              /img/about/tablet-photo-about@2x.jpg 2x
             "
           />
           <source
             srcset="
-              /img/mobile-photo-about.jpg    1x,
-              /img/mobile-photo-about@2x.jpg 2x
+              /img/about/mobile-photo-about.jpg    1x,
+              /img/about/mobile-photo-about@2x.jpg 2x
             "
             media="(min-width: 375px)"
           />
-          <img class="about-img" src="/img/image.jpg" alt="My Photo" />
+          <img class="about-img" src="/img/about/image.jpg" alt="My Photo" />
         </picture>
       </div>
     </div>
@@ -142,27 +142,33 @@
       <ul class="swiper-wrapper swiper-wrapper-about">
         <!-- Slides -->
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">HTML/CSS</div>
+          <div class="swiper-slide-item swiper-slide-item-about">HTML/CSS</div>
         </li>
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">JavaScript</div>
+          <div class="swiper-slide-item swiper-slide-item-about">
+            JavaScript
+          </div>
         </li>
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">React</div>
+          <div class="swiper-slide-item swiper-slide-item-about">React</div>
         </li>
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">Node. js</div>
+          <div class="swiper-slide-item swiper-slide-item-about">Node. js</div>
         </li>
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">React Native</div>
+          <div class="swiper-slide-item swiper-slide-item-about">
+            React Native
+          </div>
         </li>
         <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item">Soft skills</div>
+          <div class="swiper-slide-item swiper-slide-item-about">
+            Soft skills
+          </div>
         </li>
       </ul>
       <div class="swiper-button-next swiper-button-next-about">
-        <svg class="about-me-swiper-icon">
-          <use href="/img/sprite.svg#icon-arrow-right-bl"></use>
+        <svg class="about-me-swiper-icon" width="28" height="28">
+          <use href="/img/sprite.svg#icon-arrow-right"></use>
         </svg>
       </div>
       <div class="swiper-pagination"></div>

@@ -15,9 +15,11 @@ accordionAbout.open(0);
 
 // SWIPER
 
-const swiperAbout = new Swiper('.swiper', {
+const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
+  speed: 1000,
   slidesPerGroup: 1,
+  autoHeight: true,
   setWrapperSize: true,
   modules: [Navigation, Keyboard, Mousewheel],
   simulateTouch: true,
@@ -26,13 +28,12 @@ const swiperAbout = new Swiper('.swiper', {
   navigation: {
     nextEl: '.about-swiper-button',
   },
-  // mousewheel: {
-  //   invert: true,
-  // },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
+  slidesPerView: 1,
+  spaceBetween: 10,
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -40,7 +41,7 @@ const swiperAbout = new Swiper('.swiper', {
     },
     375: {
       slidesPerView: 2,
-      spaceBetween: 15,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
@@ -54,22 +55,21 @@ const swiperAbout = new Swiper('.swiper', {
 
   on: {
     init: function () {
-      // Получаем индекс активного слайда при инициализации
-      let activeSlide =
-        this.slides[this.activeIndex].querySelector('.swiper-slide-item');
+      let activeSlide = this.slides[this.activeIndex].querySelector(
+        '.swiper-slide-item-about'
+      );
       activeSlide.classList.add('active-slide');
     },
     slideChange: function () {
-      // Убираем класс с предыдущего активного слайда
       this.slides.forEach(slide => {
-        const item = slide.querySelector('.swiper-slide-item');
+        const item = slide.querySelector('.swiper-slide-item-about');
         if (item) {
           item.classList.remove('active-slide');
         }
       });
-      // Добавляем класс к новому активному слайду
-      let activeSlide =
-        this.slides[this.activeIndex].querySelector('.swiper-slide-item');
+      let activeSlide = this.slides[this.activeIndex].querySelector(
+        '.swiper-slide-item-about'
+      );
       if (activeSlide) {
         activeSlide.classList.add('active-slide');
       }

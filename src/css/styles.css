@@ -8,6 +8,7 @@
 @import url('./reset.css');
 @import url('./container.css');
 @import url('./common.css');
+@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -19,3 +20,4 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./scroll-up.css');

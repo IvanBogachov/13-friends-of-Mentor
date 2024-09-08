@@ -107,6 +107,20 @@
     gap: 12px;
 }
 
+button:disabled svg {
+    stroke: rgba(250, 250, 250, 0.2);
+    border-color: rgba(250, 250, 250, 0.2);
+    cursor: default;
+}
+
+.project-nav-div button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
 .arrow-right {
     display: flex;
     align-items: center;
