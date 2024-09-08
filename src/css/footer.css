@@ -54,6 +54,7 @@
 
 input[type="email"],
 input[type="text"] {
+    text-overflow: ellipsis;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -94,6 +95,9 @@ input[type="text"]::placeholder {
     height: 100px;
 
 }
+.btn-footer-send:hover:focus {
+    background-color: #e0373f;
+}
 
 .contacts-list-footer {
     display: flex;
@@ -111,6 +115,10 @@ input[type="text"]::placeholder {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 10px 12px;
+}
+
+.contact-item-footer:hover:focus {
+    border: 1px solid #fafafa;
 }
 
 /* Стилі для таблетів */
@@ -209,8 +217,9 @@ input[type="text"]::placeholder {
 
     /* Modal windiow */
 
-        .backdrop {
-            display: none;
+        .modal {
+            visibility: hidden;
+            z-index: 1000;
             /* Спочатку модальне вікно приховане */
             position: fixed;
             top: 0;
@@ -221,19 +230,32 @@ input[type="text"]::placeholder {
             justify-content: center;
             align-items: center;
         }
+
+                .modal.is-open {
+                    visibility: visible;
+                    pointer-events: auto;
+                    opacity: 1;
+                }
     
         .modal-content {
-            background: #1c1d20;
-            
-
-            border: 1px solid rgba(250, 250, 250, 0.1);
-            border-radius: 20px;
-            padding: 64px 32px;
-            width: 343px;
-            height: 276px;
+            position: absolute;
+                width: 343px;
+                padding: 64px 32px;
+                display: inline-flex;
+                flex-direction: column;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 20px;
+                border: 1px solid rgba(250, 250, 250, .1);
+                background: var(--Background, #1c1d20);
+                transition: var(--transition);
+                overflow: hidden;
+                cursor: pointer;
         }
 
-        .title-modal{
+        .modal-title{
             font-weight: 600;
             font-size: 20px;
             line-height: 1.5;
@@ -242,7 +264,7 @@ input[type="text"]::placeholder {
             color: #fafafa;
         }
 
-        .text-modal{
+        .modal-text{
             font-weight: 500;
                 font-size: 16px;
                 line-height: 1.5;

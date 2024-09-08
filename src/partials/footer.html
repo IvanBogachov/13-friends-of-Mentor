@@ -1,38 +1,31 @@
-<section id="work_together" class=" footer together">
+<section id="footer" class="footer together">
     <div class="container">
         <div class="title-footer">
             <div class="img-span">
                 <picture>
                     <source 
-                    srcset="./img/work-together-dextop&tablet-@1x-img.jpg 1x,
-                            ./img/work-together-dextop&tablet-@2x-img.jpg 2x"  
+                    srcset="./img/together/work-together-dextop&tablet-@1x-img.jpg 1x,
+                            ./img/together/work-together-dextop&tablet-@2x-img.jpg 2x"  
                     media="(min-width: 767px)">
                     <img class="img-footer" 
-                        srcset="./img/work-together-mobile-@1x-img.jpg 1x,
-                                ./img/work-together-mobile-@2x-img.jpg 2x
-                        " src="./img/work-together-mobile-@1x-img.jpg" 
+                        srcset="./img/together/work-together-mobile-@1x-img.jpg 1x,
+                                ./img/together/work-together-mobile-@2x-img.jpg 2x
+                        " src="./img/together/work-together-mobile-@1x-img.jpg" 
                         alt="Jefferson" 
                         width="44" 
                         height="44" 
                         loading="lazy" />
                 </picture>
-            
                 <h2 class="title-text-footer">
                     Let’s <span class="work-span">work</span>
                 </h2>
             </div>
             <h2 class="title-text-footer">together</h2>
         </div>
-
         <form class="form-footer js-form-footer">
             <div class="input-container">
-                <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required
-                    title="Invalid email, try again" />
-                <span class="email-message js-email-message"></span>
-            
-
-            <input type="text" name="comment" placeholder="comments" required maxlength="255"
-                title="Message should not exceed 255 characters" />
+            <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required/>
+            <input type="text" name="comment" placeholder="comments" required maxlength="255"/>
                 </div>
             <button id="openModalBtn" class="btn-footer-send js-btn-footer" type="submit">Send</button>
         </form>
@@ -50,17 +43,17 @@
                 </li>
             </ul>
         </address>
-    </div>
-    <!-- Модальне вікно -->
-    <div class="backdrop">
-        <div class="modal-content">
-            <button class="btnCloseModal">
-                <svg class="modal-close">
-                    <use href=""></use>
-                </svg>
-            </button>
-            <h2 class="title-modal">Thank you for your interest in cooperation!</h2>
-            <p class="text-modal">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+        <!-- Модальне вікно -->
+        <div class="modal">
+            <div class="modal-content">
+                <button class="btnCloseModal">
+                    <svg class="modal-close">
+                        <use href="/img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal-title"></h2>
+                <p class="modal-text"></p>
+            </div>
         </div>
     </div>
 </section>
