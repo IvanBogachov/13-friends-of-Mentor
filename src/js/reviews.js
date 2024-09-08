@@ -1,9 +1,16 @@
 import axios from 'axios';
 import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api/reviews';
 
 const reviewsList = document.querySelector('.reviews-list');
+const swiper = document.querySelector('.swiper').swiper;
+const nextBtn = document.querySelector('.s-button-next');
+const prevBtn = document.querySelector('.s-button-prev');
+
 const fetchReviews = async () => {
   try {
     const resp = await axios.get('');
@@ -19,12 +26,14 @@ const fetchReviews = async () => {
 const swipers = new Swiper('.swiper', {
   direction: 'horizontal',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.s-button-next',
+    prevEl: '.s-button-prev',
   },
+  slidesPerView: 1,
+  spaceBetween: 20,
   breakpointsBase: 'container',
 });
-const swiper = document.querySelector('.swiper').swiper;
+
 const greateReviews = info => {
   const reviewsValue = info
     .map(({ author, avatar_url, review }) => {
