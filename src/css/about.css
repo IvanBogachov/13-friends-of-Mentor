@@ -128,9 +128,29 @@ body {
 /* swiper */
 .swiper-about {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+.swiper-about .swiper-button-next-about {
+  border: none;
+}
+.swiper-about .swiper-wrapper-about {
+  flex-direction: row;
 }
 .swiper-about-by-id {
   display: flex;
+}
+.swiper-about .swiper-slide-about {
+  background-color: transparent;
+  width: 130px !important;
+  height: 130px;
+  margin-right: 50px !important;
 }
 .swiper-about .swiper-button-next-about {
   display: flex;
@@ -197,6 +217,12 @@ body {
   .swiper-about .swiper-button-next-about {
     top: 132px;
   }
+  .swiper-about .swiper-slide-about {
+    background-color: transparent;
+    width: 130px !important;
+    height: 130px;
+    margin-right: 110px !important;
+  }
 }
 @media screen and (min-width: 1440px) {
   .about-text-content {
@@ -217,5 +243,11 @@ body {
   }
   .accordion-about__description-text {
     margin-bottom: 10px;
+  }
+  .swiper-about .swiper-slide-about {
+    background-color: transparent;
+    width: 130px !important;
+    height: 130px;
+    margin-right: 150px !important;
   }
 }
