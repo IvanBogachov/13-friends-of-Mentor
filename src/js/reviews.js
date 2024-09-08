@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper';
+import simpleLightbox from 'simplelightbox';
 import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -7,8 +8,6 @@ import 'swiper/css/pagination';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api/reviews';
 
 const reviewsList = document.querySelector('.reviews-list');
-const nextBtn = document.querySelector('.s-button-next');
-const prevBtn = document.querySelector('.s-button-prev');
 
 const fetchReviews = async () => {
   try {
@@ -18,9 +17,7 @@ const fetchReviews = async () => {
     } else {
       greateReviews(resp.data);
     }
-  } catch (err) {
-    console.log(err);
-  }
+  } catch (err) {}
 };
 const greateReviews = info => {
   const reviewsValue = info
@@ -42,6 +39,10 @@ const swiperOption = new Swiper('.swiper', {
     nextEl: '.s-button-next',
     prevEl: '.s-button-prev',
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -52,10 +53,9 @@ const swiperOption = new Swiper('.swiper', {
       spaceBetween: 16,
     },
     1440: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 16,
     },
   },
 });
-
 fetchReviews();
