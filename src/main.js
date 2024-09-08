@@ -9,3 +9,5 @@ import './js/reviews.js';
 import './js/footer.js';
 import './js/scroll-up.js';
 import './js/utilities';
+import './js/modalwindow';
+import './js/requests';
