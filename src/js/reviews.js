@@ -57,5 +57,4 @@ const swiperOption = new Swiper('.swiper', {
     },
   },
 });
-
 fetchReviews();
