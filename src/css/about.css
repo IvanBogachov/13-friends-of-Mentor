@@ -201,7 +201,6 @@ body {
 @media screen and (min-width: 1440px) {
   .about-text-content {
     width: 680px;
-    height: 580px;
   }
   .about-wrapper {
     display: flex;

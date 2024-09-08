@@ -15,7 +15,7 @@ accordionAbout.open(0);
 
 // SWIPER
 
-const swiperAbout = new Swiper('.swiper', {
+const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
   slidesPerGroup: 1,
   setWrapperSize: true,
@@ -26,9 +26,6 @@ const swiperAbout = new Swiper('.swiper', {
   navigation: {
     nextEl: '.about-swiper-button',
   },
-  // mousewheel: {
-  //   invert: true,
-  // },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -54,22 +51,20 @@ const swiperAbout = new Swiper('.swiper', {
 
   on: {
     init: function () {
-      // Получаем индекс активного слайда при инициализации
       let activeSlide =
         this.slides[this.activeIndex].querySelector('.swiper-slide-item');
       activeSlide.classList.add('active-slide');
     },
     slideChange: function () {
-      // Убираем класс с предыдущего активного слайда
       this.slides.forEach(slide => {
         const item = slide.querySelector('.swiper-slide-item');
         if (item) {
           item.classList.remove('active-slide');
         }
       });
-      // Добавляем класс к новому активному слайду
-      let activeSlide =
-        this.slides[this.activeIndex].querySelector('.swiper-slide-item');
+      let activeSlide = this.slides[this.activeIndex].querySelector(
+        '.swiper-slide-item-about'
+      );
       if (activeSlide) {
         activeSlide.classList.add('active-slide');
       }
