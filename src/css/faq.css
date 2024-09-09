@@ -106,7 +106,6 @@
 
 .vector-separator {
     height: 2px;
-    background-color: #ccc;
-    /* або оберіть інший колір на ваш вибір */
+    background-color: #fafafa;
     width: 100%;
 }
