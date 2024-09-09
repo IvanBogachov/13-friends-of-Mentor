@@ -1,4 +1,6 @@
-
+.benefits {
+    padding: 64px 0;
+}
 .title-bnf {
 font-weight: 600;
 font-size: 16px;
@@ -33,7 +35,12 @@ border-radius: 10px;
 width: 48px;
 height: 48px;
 margin-bottom: 64px;
-}  
+} 
+.svg-bnf {
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+} 
 .name-bnf {
 font-weight: 600;
 font-size: 20px;
@@ -73,10 +80,17 @@ color: #fafafa;
 background-color: transparent;
 margin-top: 32px;
 }
-
+.btn-bnf:hover,
+.btn-bnf:focus{
+background-color: #ED3B44;
+color: #1C1D20;
+}
 
 
 @media screen and (min-width: 768px){
+.benefits {
+padding: 96px 0;
+}
 .bnf-right {
 width: 704px;
 height: 675px;
@@ -95,6 +109,7 @@ column-gap: 16px;
 @media screen and (min-width: 1440px)  {
 .benefits {
     display: flex;
+    padding: 164px 0;
 }
 .title-bnf {
     margin-right: 412px;
