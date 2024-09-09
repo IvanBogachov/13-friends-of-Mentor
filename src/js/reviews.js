@@ -1,6 +1,5 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-import simpleLightbox from 'simplelightbox';
 import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,7 +16,9 @@ const fetchReviews = async () => {
     } else {
       greateReviews(resp.data);
     }
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
 };
 const greateReviews = info => {
   const reviewsValue = info
