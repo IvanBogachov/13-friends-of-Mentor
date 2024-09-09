@@ -6,6 +6,13 @@
     border-radius: 12px;
 }
 
+.together{
+    background-image: url('../img/together/footer-1-background-img-desktop@1x.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right -718px center;
+}
+
 .img-span {
     display: flex;
     align-items: center;
@@ -128,6 +135,10 @@ input[type="text"]::placeholder {
             padding-top: 88px;
             padding-bottom: 169px;
         }
+.together {
+    background-position: right -541px center;  
+}
+        
 
     .img-footer {
             width: 70px;
@@ -195,6 +206,10 @@ input[type="text"]::placeholder {
             padding-bottom: 169px;
             padding-left: 196px;
         }
+.together {
+            background-position: right -173px center;
+}
+    
     
         input[type="email"],
         input[type="text"] {
