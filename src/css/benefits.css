@@ -1,5 +1,5 @@
 .benefits {
-    padding: 64px 0;
+padding: 64px 0;
 }
 .title-bnf {
 font-weight: 600;
@@ -37,9 +37,9 @@ height: 48px;
 margin-bottom: 64px;
 } 
 .svg-bnf {
-    width: 24px;
-    height: 24px;
-    padding: 12px;
+width: 24px;
+height: 24px;
+padding: 12px;
 } 
 .name-bnf {
 font-weight: 600;
@@ -79,6 +79,7 @@ letter-spacing: -0.02em;
 color: #fafafa;
 background-color: transparent;
 margin-top: 32px;
+margin-right: 157px;
 }
 .btn-bnf:hover,
 .btn-bnf:focus{
@@ -101,7 +102,7 @@ flex-wrap: wrap;
 column-gap: 16px;
 }
 .btn-bnf{
-    margin-top: 64px;
+margin-top: 64px;
 }
 }
     
@@ -114,6 +115,7 @@ column-gap: 16px;
 .title-bnf {
     margin-right: 412px;
 }
+
 } 
   
 
