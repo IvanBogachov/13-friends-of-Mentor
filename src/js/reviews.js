@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-import simpleLightbox from 'simplelightbox';
+import iziToast from 'izitoast';
 import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,8 +17,18 @@ const fetchReviews = async () => {
     } else {
       greateReviews(resp.data);
     }
-  } catch (err) {}
+  } catch (err) {
+    reviewsErr();
+    iziToast.error({
+      message: 'Reviews not found',
+      position: 'topRight',
+      messageSize: 20,
+    });
+  }
 };
+const reviewsErrBlock = `<li class="reviews-err" id="reviews-err">
+          <p class="reviews-err-text">Not found</p>
+        </li>`;
 const greateReviews = info => {
   const reviewsValue = info
     .map(({ author, avatar_url, review }) => {
@@ -31,7 +41,10 @@ const greateReviews = info => {
     .join('');
   reviewsList.insertAdjacentHTML('beforeend', reviewsValue);
 };
-const swiperOption = new Swiper('.swiper', {
+const reviewsErr = () => {
+  reviewsList.insertAdjacentHTML('beforeend', reviewsErrBlock);
+};
+const swiperOption = new Swiper('.reviews-swiper', {
   direction: 'horizontal',
   slidesPerView: 'auto',
   modules: [Navigation, Keyboard],
