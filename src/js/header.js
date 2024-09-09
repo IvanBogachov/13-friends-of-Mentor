@@ -16,8 +16,11 @@ const menuItem = () => {
       link.addEventListener("click", menuItem)
     })
     return;
-  }
-  
+    }
+    links.forEach(link => {
+      link.removeEventListener("click", menuItem)
+    })
+    
   for (let link of links) {
     link.addEventListener("click", event => {
       event.preventDefault();
@@ -32,8 +35,7 @@ const menuItem = () => {
 
 const openingAndClosingTheModalWindow = () => {
   const openMenu = burgerButton.getAttribute("aria-expanded") === "true" || false;
-  const links = document.querySelectorAll('a[href*="#"]')
-  
+  const links = modalWindowMenu.querySelectorAll("a[href*='#']");
     menu.classList.toggle("is-open")
     if(!openMenu) {
       links.forEach(link => {
@@ -41,7 +43,10 @@ const openingAndClosingTheModalWindow = () => {
     })
     return;
     }
-
+    
+    links.forEach(link => {
+      link.removeEventListener("click", openingAndClosingTheModalWindow)
+    })
   
   for (let link of links) {
     link.addEventListener("click", event => {
