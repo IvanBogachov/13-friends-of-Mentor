@@ -18,7 +18,7 @@
   border: 1px solid #fafafa;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+
   .main-title {
     padding-top: 281px;
     font-weight: 500;
@@ -75,7 +75,7 @@
     padding-bottom: 32px;
     gap: 4px;
   }
-}
+
 
 @media only screen and (min-width: 768px) {
   .main-title {
