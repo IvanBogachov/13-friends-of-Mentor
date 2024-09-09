@@ -11,3 +11,4 @@ import './js/scroll-up.js';
 import './js/utilities';
 import './js/modalwindow';
 import './js/requests';
+import './js/lazyload';

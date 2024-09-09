@@ -9,6 +9,7 @@
 @import url('./container.css');
 @import url('./common.css');
 @import url('./animations.css');
+@import url('./lazyload.css');
 
 /* Sections style */
 @import url('./header.css');
