@@ -1,9 +1,9 @@
 <section class="project">
     <div class="container">
         <h2 class="project-header">project</h2>
-        <div class="project-swiper-container">
-            <div class="project-swiper-wrapper">
-                <div class="project-swiper-slide">
+        <div class="swiper project-swiper">
+            <div class="swiper-wrapper">
+                <div class="project-swiper-slide swiper-slide">
                     <div class="project-info-div">
                         <ul class="technologies-list">
                             <li class="technologies-item">
@@ -29,20 +29,19 @@
                     <div class="project-picture-div">
                         <picture>
                             <source srcset="
-                  /img/project-desktop-1-img.jpg    1x,
-                  /img/project-desktop-1-img@2x.jpg 2x
+                  /img/project/project-desktop-1-img.jpg    1x,
+                  /img/project/project-desktop-1-img@2x.jpg 2x
                 " media="(min-width: 1440px)" />
                             <source srcset="
-                  /img/project-tablet-1-img.jpg    1x,
-                  /img/project-tablet-1-img@2x.jpg 2x
+                  /img/project/project-tablet-1-img.jpg    1x,
+                  /img/project/project-tablet-1-img@2x.jpg 2x
                 " media="(min-width: 768px)" />
-                            <img class="project-picture" src="/img/project-mobile-1-img.jpg"
-                                srcset="/img/project-mobile-1-img@2x.jpg 2x" alt="form image" />
+                            <img class="project-picture" src="/img/project/project-mobile-1-img.jpg"
+                                srcset="/img/project/project-mobile-1-img@2x.jpg 2x" alt="form image" />
                         </picture>
                     </div>
                 </div>
-
-                <!-- <div class="project-swiper-slide">
+                <div class="project-swiper-slide swiper-slide">
                     <div class="project-info-div">
                         <ul class="technologies-list">
                             <li class="technologies-item">
@@ -68,20 +67,19 @@
                     <div class="project-picture-div">
                         <picture>
                             <source srcset="
-                  /img/project-desktop-2-img.jpg    1x,
-                  /img/project-desktop-2-img@2x.jpg 2x
+                  /img/project/project-desktop-2-img.jpg    1x,
+                  /img/project/project-desktop-2-img@2x.jpg 2x
                 " media="(min-width: 1440px)" />
                             <source srcset="
-                  /img/project-tablet-2-img.jpg    1x,
-                  /img/project-tablet-2-img@2x.jpg 2x
+                  /img/project/project-tablet-2-img.jpg    1x,
+                  /img/project/project-tablet-2-img@2x.jpg 2x
                 " media="(min-width: 768px)" />
-                            <img class="project-picture" src="/img/project-mobile-2-img.jpg"
-                                srcset="/img/project-mobile-2-img@2x.jpg 2x" alt="form image" />
+                            <img class="project-picture" src="/img/project/project-mobile-2-img.jpg"
+                                srcset="/img/project/project-mobile-2-img@2x.jpg 2x" alt="form image" />
                         </picture>
                     </div>
                 </div>
-
-                <div class="project-swiper-slide">
+                <div class="project-swiper-slide swiper-slide">
                     <div class="project-info-div">
                         <ul class="technologies-list">
                             <li class="technologies-item">
@@ -107,31 +105,31 @@
                     <div class="project-picture-div">
                         <picture>
                             <source srcset="
-                  /img/project-desktop-3-img.jpg    1x,
-                  /img/project-desktop-3-img@2x.jpg 2x
+                  /img/project/project-desktop-3-img.jpg    1x,
+                  /img/project/project-desktop-3-img@2x.jpg 2x
                 " media="(min-width: 1440px)" />
                             <source srcset="
-                  /img/project-tablet-3-img.jpg    1x,
-                  /img/project-tablet-3-img@2x.jpg 2x
+                  /img/project/project-tablet-3-img.jpg    1x,
+                  /img/project/project-tablet-3-img@2x.jpg 2x
                 " media="(min-width: 768px)" />
-                            <img class="project-picture" src="/img/project-mobile-3-img.jpg"
-                                srcset="/img/project-mobile-3-img@2x.jpg 2x" alt="form image" />
+                            <img class="project-picture" src="/img/project/project-mobile-3-img.jpg"
+                                srcset="/img/project/project-mobile-3-img@2x.jpg 2x" alt="form image" />
                         </picture>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="project-nav-div">
-                <div class="project-swiper-button-prew">
-                    <svg class="arrow-right" width="32" height="32" fill="white">
+                <button class="project-swiper-button-prev">
+                    <svg class="arrow-left" width="32" height="32" >
                         <use href="/img/sprite.svg#icon-arrow-left"></use>
                     </svg>
-                </div>
-                <div class="project-swiper-button-next">
-                    <svg class="arrow-right" width="32" height="32" fill="white">
+                </button>
+                <button class="project-swiper-button-next">
+                    <svg class="arrow-right" width="32" height="32" >
                         <use href="/img/sprite.svg#icon-arrow-right"></use>
                     </svg>
-                </div>
+                </button>
             </div>
         </div>
     </div>
