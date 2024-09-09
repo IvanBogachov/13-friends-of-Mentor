@@ -220,7 +220,7 @@ body {
   .swiper-about .swiper-slide-about {
     background-color: transparent;
     width: 130px !important;
-    height: 130px;
+    height: 200px;
     margin-right: 110px !important;
   }
 }
@@ -247,7 +247,7 @@ body {
   .swiper-about .swiper-slide-about {
     background-color: transparent;
     width: 130px !important;
-    height: 130px;
+    height: 200px;
     margin-right: 150px !important;
   }
 }
