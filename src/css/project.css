@@ -188,7 +188,7 @@ button:disabled:hover svg {
 
     #project-swiper-id {
         margin-bottom: 64px;
-        min-width: 700px;
+        width: auto;
     }
 
     .project-card {
@@ -249,7 +249,7 @@ button:disabled:hover svg {
     #project-swiper-id {
         display: flex;
         justify-content: space-between;
-        min-width: 1376px;
+        width: auto;
     }
 
     .project-info-div {

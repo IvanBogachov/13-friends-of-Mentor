@@ -10,11 +10,16 @@
     background-image: url('../img/hero/background-image-hero@2x.png');
   }
 }
+.hero-item,
+.hero-email {
+  transition: border 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 .hero-item:hover,
 .hero-email:hover,
 .hero-item:focus {
   border: 1px solid #fafafa;
 }
+
 /* Styles for Mobile devices */
 .hero-title {
   font-weight: 500;
@@ -43,18 +48,18 @@
 }
 .hero-link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: -0.02em;
   color: #fafafa;
 }
 .hero-email {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
+  padding: 10px 11px;
   width: 178px;
   height: 37px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: -0.02em;
   color: #fafafa;
   display: flex;
@@ -73,6 +78,9 @@
   align-items: center;
   padding-bottom: 32px;
 }
+
+
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
