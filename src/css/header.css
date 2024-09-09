@@ -1,12 +1,13 @@
 .header-container {
   position: absolute;
-  left: auto;
-  right: auto;
-  min-width: 320px;
+  top: 32px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
+
+/*.page-navigation {
+  margin-right: 143px;
+}*/
 
 .logo {
   display: flex;
@@ -28,16 +29,22 @@
 }
 
 .icon-burger-btn {
+  max-width: 28px;
+  max-height: 28px;
   border: transparent;
   background-color: transparent;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
+  .header-container {
+    left: 12%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
-    min-width: 768px;
+    display: block;
+    left: 7%;
   }
 
   .icon-burger-btn {
@@ -47,27 +54,30 @@
   .page-navigation {
     display: flex;
     justify-content: space-between;
-    width: 100%;
   }
 
   .menu {
     display: block;
   }
 
-  .hidden-menu {
+  .modal-container {
     position: fixed;
-    top: 32px;
+    top: 64px;
     left: auto;
     width: 100%;
     height: 100%;
     z-index: 99999999;
-    overflow-y: auto;
-    transform: translateX(100%);
-    transition-timing-function: linear;
+    transform: translateY(-200%);
+    transition: transform 2000ms linear;
   }
 
-  .hidden-menu.is-activation {
-    transform: translateX(0%);
+  .modal-container.is-activation {
+    transform: translateY(0%);
+  }
+
+  .hidden-menu {
+    max-width: 67px;
+    text-align: center;
   }
 
   .btn {
@@ -80,11 +90,11 @@
     background-color: transparent;
     border: none;
   }
-
+  
   .modal-menu {
     position: absolute;
   }
-
+  
   .order-link {
     display: flex;
     align-items: center;
@@ -97,6 +107,17 @@
     max-height: 55px;
     background-color: #ed3b44;
   }
+
+  .order-link:hover {
+    background-color: #F15059;
+  }
+
+}
+
+@media screen and (min-width:1158px) {
+  .header-container {
+    left: 1%;
+  }
 }
 
 .burger-modal-window {
@@ -106,15 +127,13 @@
   width: 100%;
   height: 100%;
   z-index: 99999999;
-  background-image: linear-gradient(
-      90deg,
-      #1c1d20 49.68%,
-      #69292d 67.73%,
-      #ed3b44 100%
-    ),
-    url('../img/mobile-header-background@2x.jpg');
+  background-image: 
+    url('../img/header-img/mobile-header-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow-y: auto;
   transform: translateX(100%);
+  transition: transform 2000ms linear;
 }
 
 .burger-modal-window.is-open {
@@ -145,7 +164,7 @@
 
 .modal-window-btn:hover,
 .modal-window-btn:focus {
-  background-color: #1c1d20;
+  background-color: #F15059;
 }
 
 .mobile-page-navigation {
@@ -169,6 +188,11 @@
   text-decoration-skip-ink: none;
 }
 
+.mobile-menu-link:hover {
+  color: #69292d;
+  
+}
+
 .mobile-order-link {
   display: flex;
   align-self: flex-end;
@@ -181,4 +205,22 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   background-color: #ed3b44;
+}
+
+.mobile-order-link:hover {
+  background-color: #F15059;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .burger-modal-window {
+    background-image:
+    url('../img/header-img/mobile-header-background@2x.jpg');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+  .burger-modal-window {
+    background-image:
+    url('../img/header-img/mobile-header-background@2x.jpg');
+  }
 }
