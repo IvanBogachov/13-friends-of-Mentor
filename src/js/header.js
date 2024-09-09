@@ -5,59 +5,51 @@ const menuEl = document.querySelector(".modal-container");
 const modalWindowMenu = document.querySelector(".mobile-menu");
 const btn = document.querySelector(".btn");
 
+const smoothScrollingPage = () => {
+  const links = document.querySelectorAll('a[href*="#"]')
+
+  links.forEach(link => {
+    link.addEventListener('click', (event) => {
+    event.preventDefault()
+    
+    const blockId = link.getAttribute('href').substring(1)
+    
+    document.getElementById(blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+  })
+}
 
 const menuItem = () => {
-  menuEl.classList.toggle("is-activation")  
+  menuEl.classList.toggle("is-activation")
   
-  const openMenu = btn.getAttribute('aria-expanded') === "true" || false;
-  const links = menuEl.querySelectorAll("a[href*='#']");
-    if(!openMenu) {
-      links.forEach(link => {
-      link.addEventListener("click", menuItem)
+  menuEl.querySelectorAll(".menu-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuEl.classList.remove("is-activation")
     })
-    return;
-    }
-    links.forEach(link => {
-      link.removeEventListener("click", menuItem)
-    })
-    
-  for (let link of links) {
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      const bloclId = link.getAttribute("href")
-      document.querySelector("" + bloclId).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
-    })
-  }
+  })
+
+  smoothScrollingPage();
 }
 
 const openingAndClosingTheModalWindow = () => {
-  const openMenu = burgerButton.getAttribute("aria-expanded") === "true" || false;
-  const links = modalWindowMenu.querySelectorAll("a[href*='#']");
-    menu.classList.toggle("is-open")
-    if(!openMenu) {
-      links.forEach(link => {
-      link.addEventListener("click", openingAndClosingTheModalWindow);
-    })
-    return;
-    }
-    
-    links.forEach(link => {
-      link.removeEventListener("click", openingAndClosingTheModalWindow)
-    })
+  menu.classList.toggle("is-open")
   
-  for (let link of links) {
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      const bloclId = link.getAttribute("href")
-      document.querySelector("" + bloclId).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
+  menu.querySelectorAll(".mobile-menu-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("is-open")
     })
-  }
+  })
+
+  menu.querySelectorAll(".mobile-order-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("is-open")
+    })
+  })
+
+  smoothScrollingPage();
 }
 
 btn.addEventListener("click", menuItem);
