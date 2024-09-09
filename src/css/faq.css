@@ -14,25 +14,29 @@
     font-size: 2em;
     margin-bottom: 32px;
     text-align: center;
+    color: #fff;
 }
 
-/* Список FAQ */
 .accordion-faq {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 0;
 }
 
 .accordion-faq__items--faq {
-    flex: 1 1 calc(50% - 32px);
-    /* Дві колонки */
+    flex: 1 1 50%;
     background: #2C2D30;
-    border-radius: 8px;
+    border-bottom: 2px solid #444;
+    border-right: 2px solid #444;
     overflow: hidden;
     transition: all 0.3s ease;
+}
+
+.accordion-faq__items--faq:nth-child(2n) {
+    border-right: none;
 }
 
 .accordion-faq__btn {
@@ -47,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 
 .accordion-faq__btn:hover {
@@ -56,15 +61,12 @@
 .accordion-faq__description,
 .accordion-faq__content {
     display: none;
-    /* Початково всі відповіді згорнуті */
     padding: 20px;
     background: #2C2D30;
-    border-top: 1px solid #444;
     font-size: 1em;
     color: #ccc;
 }
 
-/* Стилі для SVG */
 .arrow-svg {
     width: 24px;
     height: 24px;
@@ -76,15 +78,13 @@
     transform: rotate(180deg);
 }
 
-/* Адаптивність для планшетів */
 @media (max-width: 1024px) {
     .accordion-faq__items--faq {
         flex: 1 1 100%;
-        /* Одна колонка */
+        border-right: none;
     }
 }
 
-/* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
     .faq-container {
         padding: 32px;
@@ -102,4 +102,10 @@
     .accordion-faq__content {
         font-size: 0.9em;
     }
+}
+
+.vector-separator {
+    height: 2px;
+    background-color: #fafafa;
+    width: 100%;
 }
