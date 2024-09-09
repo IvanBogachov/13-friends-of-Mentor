@@ -2,11 +2,13 @@
 import Accordion from 'accordion-js';  
 import 'accordion-js/dist/accordion.min.css';  
 
-// Ініціалізація акордеона  
-const accordionFaq = new Accordion('.accordion-faq', {  
-  duration: 300,  
-  showMultiple: false, // Установіть в false, якщо хочете, щоб був відкритим тільки один елемент за раз  
-});  
+// Ініціалізація акордеона з потрібними класами  
+document.addEventListener('DOMContentLoaded', () => {  
+    const accordionFaq = new Accordion('.accordion-faq', {  
+        duration: 300,  
+        showMultiple: false, // Встановлення 'false' відкриває лише один елемент за раз  
+    });  
 
-// Вираження для відкриття першого елементу (необов'язково)  
-accordionFaq.open(0);  
+    // Опціонально: відкрити перший елемент відразу  
+    accordionFaq.open(0);  
+});  
