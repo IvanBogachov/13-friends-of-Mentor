@@ -18,20 +18,23 @@ function validateEmail() {
   const pattern = /^(?!\s*$)\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; // Регулярний вираз для перевірки email
   const email = refs.emailInput.value.trim(); // Отримання введеного email з видаленням пробілів на початку і в кінці
 
-  if (pattern.test(email)) { // Якщо email відповідає шаблону
+  if (pattern.test(email)) {
+    // Якщо email відповідає шаблону
     refs.emailInput.classList.remove('invalid'); // Видалення класу 'invalid'
     refs.emailInput.classList.add('valid'); // Додавання класу 'valid'
     refs.emailMessage.textContent = 'Success!'; // Відображення повідомлення про успіх
     refs.emailMessage.classList.remove('error'); // Видалення класу 'error'
     refs.emailMessage.classList.add('success'); // Додавання класу 'success'
     wasEmailValid = true; // Встановлення прапорця, що email валідний
-  } else if (email === '') { // Якщо поле email порожнє
+  } else if (email === '') {
+    // Якщо поле email порожнє
     refs.emailInput.classList.remove('valid'); // Видалення класу 'valid'
     refs.emailInput.classList.remove('invalid'); // Видалення класу 'invalid'
     refs.emailMessage.classList.remove('success'); // Видалення класу 'success'
     refs.emailMessage.classList.remove('error'); // Видалення класу 'error'
     wasEmailValid = false; // Встановлення прапорця, що email не валідний
-  } else { // Якщо email не відповідає шаблону
+  } else {
+    // Якщо email не відповідає шаблону
     refs.emailInput.classList.remove('valid'); // Видалення класу 'valid'
     refs.emailInput.classList.add('invalid'); // Додавання класу 'invalid'
     refs.emailMessage.textContent = 'Invalid email, try again'; // Відображення повідомлення про помилку
@@ -46,20 +49,23 @@ function validateEmailInput() {
   const pattern = /^(?!\s*$)\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; // Регулярний вираз для перевірки email
   const email = refs.emailInput.value.trim(); // Отримання введеного email з видаленням пробілів на початку і в кінці
 
-  if (pattern.test(email)) { // Якщо email відповідає шаблону
+  if (pattern.test(email)) {
+    // Якщо email відповідає шаблону
     refs.emailInput.classList.remove('invalid'); // Видалення класу 'invalid'
     refs.emailInput.classList.add('valid'); // Додавання класу 'valid'
     refs.emailMessage.textContent = 'Success!'; // Відображення повідомлення про успіх
     refs.emailMessage.classList.remove('error'); // Видалення класу 'error'
     refs.emailMessage.classList.add('success'); // Додавання класу 'success'
     wasEmailValid = true; // Встановлення прапорця, що email валідний
-  } else if (email === '') { // Якщо поле email порожнє
+  } else if (email === '') {
+    // Якщо поле email порожнє
     refs.emailInput.classList.remove('valid'); // Видалення класу 'valid'
     refs.emailInput.classList.remove('invalid'); // Видалення класу 'invalid'
     refs.emailMessage.classList.remove('success'); // Видалення класу 'success'
     refs.emailMessage.classList.remove('error'); // Видалення класу 'error'
     wasEmailValid = false; // Встановлення прапорця, що email не валідний
-  } else if (wasEmailValid) { // Якщо раніше email був валідним, але тепер невірний
+  } else if (wasEmailValid) {
+    // Якщо раніше email був валідним, але тепер невірний
     refs.emailInput.classList.remove('valid'); // Видалення класу 'valid'
     refs.emailInput.classList.add('invalid'); // Додавання класу 'invalid'
     refs.emailMessage.textContent = 'Invalid email, try again'; // Відображення повідомлення про помилку
@@ -83,12 +89,14 @@ refs.formFooter.addEventListener('submit', async function (e) {
   const comment = formData.get('comment'); // Отримання значення коментаря з форми
 
   try {
-    const response = await postComment({ // Відправка даних на сервер
+    const response = await postComment({
+      // Відправка даних на сервер
       email,
       comment,
     });
 
-    if (!response) { // Якщо сервер не повертає відповідь
+    if (!response) {
+      // Якщо сервер не повертає відповідь
       throw new Error('Server error'); // Викидає помилку
     }
 
@@ -98,12 +106,12 @@ refs.formFooter.addEventListener('submit', async function (e) {
 
     refs.formFooter.reset(); // Повторне скидання форми (зайвий виклик)
     showModal(response); // Відображення модального вікна з відповіддю від сервера
-  } catch (error) { // Обробка помилок
-    iziToast.show({ // Відображення спливаючого повідомлення про помилку
+  } catch (error) {
+    // Обробка помилок
+    iziToast.show({
+      // Відображення спливаючого повідомлення про помилку
       title: ':(', // Заголовок повідомлення
       message: `Error: ${error.message}. Please check your input and try again.`, // Текст повідомлення з деталями помилки
     });
   }
 });
-
-
