@@ -12,7 +12,6 @@
 }
 
 .disable-scroll {
-  position: relative;
   overflow: hidden;
   height: 100vh;
 }
@@ -101,17 +100,21 @@
     border: none;
   }
 
-  .modal-menu {
-    position: absolute;
+  .btn:hover {
+    color: #f15059;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #f15059;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .order-link {
     display: flex;
     align-items: center;
-    justify-content: center;
     font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
     border-radius: 60px;
     padding: 18px 24px;
     max-height: 55px;
@@ -139,10 +142,9 @@
   width: 100%;
   height: 100%;
   z-index: 99999999;
-  background-image: url('../img/header-img/mobile-header-background.jpg');
+  background-image: url('../img/header-img/mobile-header-background.png');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: auto;
   transform: translateX(100%);
   transition: transform 1000ms linear;
 }
@@ -167,8 +169,6 @@
   right: 18px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   border: none;
 }
@@ -192,21 +192,18 @@
 
 .mobile-menu-link {
   font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: #69292d;
+  color: #f15059;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-order-link {
   display: flex;
-  align-self: flex-end;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -214,7 +211,6 @@
   border-radius: 60px;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.02em;
   background-color: #ed3b44;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -224,14 +220,8 @@
   background-color: #f15059;
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+@media screen and (min-resolution: 192dpi) {
   .burger-modal-window {
-    background-image: url('../img/header-img/mobile-header-background@2x.jpg');
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-  .burger-modal-window {
-    background-image: url('../img/header-img/mobile-header-background@2x.jpg');
+    background-image: url('../img/header-img/mobile-header-background@2x.png');
   }
 }
