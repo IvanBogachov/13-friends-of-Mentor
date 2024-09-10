@@ -4,6 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 281px;
+  padding-bottom: 32px;
 }
 @media only screen and (min-resolution: 192dpi) {
   .hero {
@@ -28,8 +30,8 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  padding-top: 281px;
   margin-bottom: 212px;
+  
 }
 .hero-list {
   display: flex;
@@ -70,24 +72,26 @@
 }
 .hero-social {
   gap: 4px;
-  margin-top: 212px;
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: 32px;
+  
 }
 
 
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 300px;
+  }
   .container {
     max-width: 768px;
   }
   .hero-title {
-    padding-top: 300px;
+    
     margin-bottom: 187px;
     width: 632px;
     font-size: 90px;
