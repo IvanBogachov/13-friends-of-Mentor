@@ -55,6 +55,10 @@
     color: #1c1d20;
 }
 
+.technologies-item:hover {
+    border: 1px solid #e0373f;
+}
+
 .project-text {
     font-weight: 500;
     font-size: 24px;
@@ -188,7 +192,7 @@ button:disabled:hover svg {
 
     #project-swiper-id {
         margin-bottom: 64px;
-        min-width: 700px;
+        width: auto;
     }
 
     .project-card {
@@ -249,7 +253,7 @@ button:disabled:hover svg {
     #project-swiper-id {
         display: flex;
         justify-content: space-between;
-        min-width: 1376px;
+        width: auto;
     }
 
     .project-info-div {
