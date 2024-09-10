@@ -1,5 +1,5 @@
 .project {
-    margin-bottom: 164px;
+    margin-bottom: 64px;
 }
 
 .project-header {
@@ -82,7 +82,7 @@
     height: 45px;
 
     background: #ed3b44;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-weight: 500;
     font-size: 16px;
@@ -129,6 +129,7 @@
 
     fill: transparent;
     stroke: #fafafa;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
@@ -148,6 +149,7 @@
 
     fill: transparent;
     stroke: #fafafa;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
@@ -187,6 +189,9 @@ button:disabled:hover svg {
 }
 
 @media screen and (min-width: 768px) {
+    .project {
+        margin-bottom: 96px;
+    }
 
     #project-swiper-id {
         margin-bottom: 64px;
@@ -249,6 +254,10 @@ button:disabled:hover svg {
 }
 
 @media screen and (min-width: 1440px) {
+    .project {
+        margin-bottom: 164px;
+    }
+
     #project-swiper-id {
         display: flex;
         justify-content: space-between;
