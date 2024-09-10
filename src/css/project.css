@@ -1,4 +1,3 @@
-
 .project-header {
     display: block;
     margin-bottom: 32px;
@@ -12,24 +11,16 @@
 }
 
 .project-swiper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-swiper-slide {
-    border-radius: 24px;
-    background: #fafafa;
-    margin-bottom: 32px;
+    display: block;
 }
 
 .project-info-div {
     display: flex;
     flex-direction: column;
+    background: #fafafa;
+    border-radius: 24px 24px 0 0;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
 }
 
 .technologies-list {
@@ -39,6 +30,8 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 6px;
+    margin-left: 32px;
+    margin-right: 32px;
 
     margin-bottom: 96px;
 }
@@ -62,6 +55,10 @@
     color: #1c1d20;
 }
 
+.technologies-item:hover {
+    border: 1px solid #e0373f;
+}
+
 .project-text {
     font-weight: 500;
     font-size: 24px;
@@ -69,6 +66,8 @@
     letter-spacing: -0.03em;
     color: #1c1d20;
 
+    margin-left: 32px;
+    margin-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -78,12 +77,14 @@
     justify-content: center;
     flex-direction: row;
     gap: 10px;
+    margin-left: 32px;
 
     border-radius: 60px;
     width: 141px;
     height: 45px;
 
     background: #ed3b44;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-weight: 500;
     font-size: 16px;
@@ -96,8 +97,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 0 24px 24px;
-    width: 343px;
-    height: 395px;
+    padding: 100px 16px;
     background: #242527;
 }
 
@@ -105,12 +105,7 @@
     display: flex;
     justify-content: center;
     gap: 12px;
-}
-
-button:disabled svg {
-    stroke: rgba(250, 250, 250, 0.2);
-    border-color: rgba(250, 250, 250, 0.2);
-    cursor: default;
+    margin-top: 32px;
 }
 
 .project-nav-div button {
@@ -159,22 +154,60 @@ button:disabled svg {
     cursor: pointer;
 }
 
+.project-link:hover {
+    background: #e0373f;
+}
+
+.arrow-left:hover {
+    stroke: #e0373f;
+    border: 1px solid #e0373f;
+}
+
+.arrow-right:hover {
+    stroke: #e0373f;
+    border: 1px solid #e0373f;
+}
+
+button:disabled svg {
+    stroke: rgba(250, 250, 250, 0.2);
+    border-color: rgba(250, 250, 250, 0.2);
+    cursor: default;
+}
+
+button:disabled:hover svg {
+    stroke: rgba(250, 250, 250, 0.2);
+    border-color: rgba(250, 250, 250, 0.2);
+    cursor: default;
+}
+
+@media screen and (max-width: 374px) {
+    .project-picture-div {
+        padding: 100px 16px;
+        width: auto;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
-    .project-swiper-slide {
+    #project-swiper-id {
         margin-bottom: 64px;
-        width: 704px !important;
+        width: auto;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
     }
 
     .project-info-div {
-        margin-left: 64px;
-        margin-right: 64px;
         padding-top: 64px;
         padding-bottom: 64px;
     }
 
     .technologies-list {
         margin-bottom: 164px;
+        margin-left: 64px;
     }
 
     .technologies-item {
@@ -184,18 +217,19 @@ button:disabled svg {
 
     .project-text {
         font-size: 44px;
-        width: 494px;
+        margin-left: 64px;
+        max-width: 494px;
     }
 
     .project-link {
         width: 177px;
         height: 55px;
+        margin-left: 64px;
     }
 
     .project-picture-div {
         border-radius: 0 0 24px 24px;
-        width: 704px;
-        height: 625px;
+        padding: 120px 45px;
     }
 
     .project-nav-div {
@@ -216,27 +250,32 @@ button:disabled svg {
 }
 
 @media screen and (min-width: 1440px) {
-    .project-swiper-slide {
+    #project-swiper-id {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 1376px !important;
-        height: 625px !important;
-        flex-direction: row;
+        width: auto;
+    }
+
+    .project-info-div {
+        border-radius: 24px 0 0 24px;
+        flex: 1;
     }
 
     .technologies-list {
-        margin-bottom: 201px;
-    }
-
-    .project-link:hover {
-        background: #e0373f;
+        margin-bottom: 223px;
     }
 
     .project-picture-div {
-        display: flex;
-        width: 688px;
         border-top-right-radius: 24px;
         border-bottom-left-radius: 0;
     }
+
+    .project-nav-div {
+        justify-content: flex-end;
+    }
 }
+
+
+
+
+
