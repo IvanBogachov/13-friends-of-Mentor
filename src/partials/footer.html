@@ -1,5 +1,5 @@
-<section id="footer section-animation" class="footer together">
-    <div class="container">
+<footer id="footer section-animation" class="footer together">
+    <div class="container footer-container">
         <div class="title-footer">
             <div class="img-span">
                 <picture>
@@ -14,7 +14,7 @@
                         alt="Jefferson" 
                         width="44" 
                         height="44" 
-                        loading="lazy" />
+                        />
                 </picture>
                 <h2 class="title-text-footer">
                     Let’s <span class="work-span">work</span>
@@ -24,10 +24,14 @@
         </div>
         <form class="form-footer js-form-footer">
             <div class="input-container">
-            <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required/>
-            <input type="text" name="comment" placeholder="comments" required maxlength="255"/>
-                </div>
-            <button id="openModalBtn" class="btn-footer-send js-btn-footer" type="submit">Send</button>
+                <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required
+                    title="Invalid email, try again" />
+                <span class="email-message js-email-message"></span>
+            </div>
+        
+            <input type="text" name="comment" placeholder="comments" required maxlength="255"
+                title="Message should not exceed 255 characters" />
+            <button class="btn-footer-send js-btn-footer" type="submit">Send</button>
         </form>
         <address class="contacts-footer">
             <ul class="contacts-list-footer">
@@ -56,6 +60,6 @@
             </div>
         </div>
     </div>
-</section>
+</footer>
 
 
