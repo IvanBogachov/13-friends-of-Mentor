@@ -18,7 +18,10 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.project-swiper-button-next',
         prevEl: '.project-swiper-button-prev',
     },
-
+    keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    },
     breakpoints: {
     768: {
       slidesPerView: 1,
