@@ -33,7 +33,7 @@ const greateReviews = info => {
   const reviewsValue = info
     .map(({ author, avatar_url, review }) => {
       return `<li class="reviews-item swiper-slide">
-  <img class="reviews-img" src="${avatar_url}" alt="${author}" />
+  <img class="reviews-img" loading="lazy" src="${avatar_url}" alt="${author}" />
   <h3 class="reviews-name">${author}</h3>
   <p class="reviews-text">${review}</p>
 </li>`;

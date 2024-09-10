@@ -30,7 +30,12 @@
             "
             media="(min-width: 375px)"
           />
-          <img class="about-img" src="/img/about/image.jpg" alt="My Photo" />
+          <img
+            class="about-img"
+            src="/img/about/image.jpg"
+            alt="My Photo"
+            loading="lazy"
+          />
         </picture>
       </div>
     </div>
@@ -38,7 +43,7 @@
     <!-- accordion -->
     <ul class="accordion-about accordion-container">
       <li
-        class="accordion-about__items accordion-about__items--about ac underline"
+        class="accordion-first accordion-about__items accordion-about__items--about ac underline first"
       >
         <h3 class="accordion-about__title ac-header">
           About me
@@ -138,40 +143,79 @@
     </ul>
 
     <!-- Slider main container -->
-    <div class="swiper swiper-about" id="swiper-about-by-id">
-      <ul class="swiper-wrapper swiper-wrapper-about">
-        <!-- Slides -->
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">HTML/CSS</div>
-        </li>
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">
-            JavaScript
-          </div>
-        </li>
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">React</div>
-        </li>
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">Node. js</div>
-        </li>
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">
-            React Native
-          </div>
-        </li>
-        <li class="swiper-slide swiper-slide-about">
-          <div class="swiper-slide-item swiper-slide-item-about">
-            Soft skills
-          </div>
-        </li>
-      </ul>
+    <div class="about-me-skills-wrapper">
+      <div class="swiper swiper-about" id="swiper-about-by-id">
+        <ul class="swiper-wrapper swiper-wrapper-about">
+          <!-- Slides -->
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              HTML/CSS
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              JavaScript
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">React</div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              Node. js
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              React Native
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              Soft skills
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              HTML/CSS
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              JavaScript
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">React</div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              Node. js
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              React Native
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              Soft skills
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide-about">
+            <div class="swiper-slide-item swiper-slide-item-about">
+              Soft skills
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="swiper-button-next swiper-button-next-about">
         <svg class="about-me-swiper-icon" width="28" height="28">
           <use href="/img/sprite.svg#icon-arrow-right"></use>
         </svg>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
