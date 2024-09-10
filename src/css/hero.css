@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../img/hero/background-image-hero.png');
+  background-image: url('../img/hero/red-hero-bg-mob.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 }
 @media only screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: url('../img/hero/background-image-hero@2x.png');
+    background-image: url('../img/hero/red-hero-bg-mob@2x.png');
   }
 }
 .hero-item,
@@ -85,9 +85,11 @@
 
 
 /* Styles for Tablet devices */
+
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 300px;
+    background-image: url('../img/hero/red-hero-bg-tab.png');
     
   }
   .container {
@@ -120,10 +122,16 @@
     justify-content: flex-end;
   }
 }
-/* Styles for Tablet devices */
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: url('../img/hero/red-hero-bg-tab@2x.png');
+  }
+}
+/* Styles for desktop devices */
 @media only screen and (min-width: 1200px) {
   .hero {
     margin-bottom: 96px;
+    background-image: url('../img/hero/red-hero-bg-desk.png');
   }
   .container {
     max-width: 1440px;
@@ -131,4 +139,9 @@
   .hero-title {
     width: 1084px;
   }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+.hero {
+  background-image: url('../img/hero/red-hero-bg-desk@2x.png');
+}
 }
