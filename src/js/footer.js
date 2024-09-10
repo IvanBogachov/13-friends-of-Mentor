@@ -10,7 +10,6 @@ const refs = {
   emailInput: document.querySelector('.js-email-input'),
 };
 
-
 let wasEmailValid = false; // Змінна для відстеження валідності email
 
 // Функція для перевірки валідності email
@@ -95,4 +94,3 @@ refs.formFooter.addEventListener('submit', async function (e) {
     });
   }
 });
-
