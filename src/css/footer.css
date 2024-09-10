@@ -1,5 +1,13 @@
+form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px  #1c1d20 inset;
+    box-shadow: 0 0 0px 1000px  #1c1d20 inset;
+    -webkit-text-fill-color: #fafafa;
+    color: #fafafa;
+    
+}
+
 .footer{
-    padding-top: 51px;
+    padding-top: 32px;
     padding-bottom: 32px;
 }
 .img-footer {
@@ -44,7 +52,7 @@
 }
 
 .title-footer {
-    padding-bottom: 63px;
+    margin-bottom:  63px;
 }
 
 .input-container {
@@ -56,7 +64,7 @@
 }
 
 .form-footer{
-    padding-bottom: 64px;
+    margin-bottom:  64px;
 }
 
 
@@ -142,7 +150,7 @@ input[type="text"]::placeholder {
 /* Стилі для таблетів */
 @media screen and (min-width: 768px) {
     .footer {
-            padding-top: 88px;
+            padding-top: 80px;
             padding-bottom: 169px;
         }
 .together {
@@ -166,7 +174,7 @@ input[type="text"]::placeholder {
         letter-spacing: -0.03em;
     }
     .title-footer {
-            padding-bottom: 64px;
+            margin-bottom:  64px;
         }
 
     input[type="email"],
@@ -212,11 +220,12 @@ input[type="text"]::placeholder {
 
 @media screen and (min-width: 1440px) {
     .footer {
-            padding-top: 122px;
+            padding-top: 80px;
             padding-bottom: 169px;
-            padding-left: 196px;
 }
-
+    .footer-container{
+        padding-left: 169px;
+    }
     .together {
             background-position: right -173px center;
 }
@@ -287,6 +296,7 @@ margin-left: 86px;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fafafa;
+    margin-bottom: 16px;
 }
 
 .modal-text{
@@ -305,12 +315,14 @@ margin-left: 86px;
     position: absolute;
     top: 10px;
     right: 10px;
+       
 }
 
 .modal-close{
     width: 22px;
     height: 22px;
 }
+
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -321,6 +333,7 @@ margin-left: 86px;
 .modal-close {
     width: 24px;
     height: 24px;
+    
 }
 .modal-content{
     padding: 64px;
