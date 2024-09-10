@@ -1,3 +1,7 @@
+.project {
+    margin-bottom: 164px;
+}
+
 .project-header {
     display: block;
     margin-bottom: 32px;
@@ -19,8 +23,7 @@
     flex-direction: column;
     background: #fafafa;
     border-radius: 24px 24px 0 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px;
 }
 
 .technologies-list {
@@ -30,8 +33,6 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 6px;
-    margin-left: 32px;
-    margin-right: 32px;
 
     margin-bottom: 96px;
 }
@@ -66,8 +67,6 @@
     letter-spacing: -0.03em;
     color: #1c1d20;
 
-    margin-left: 32px;
-    margin-right: 32px;
     margin-bottom: 32px;
 }
 
@@ -77,7 +76,6 @@
     justify-content: center;
     flex-direction: row;
     gap: 10px;
-    margin-left: 32px;
 
     border-radius: 60px;
     width: 141px;
@@ -203,11 +201,12 @@ button:disabled:hover svg {
     .project-info-div {
         padding-top: 64px;
         padding-bottom: 64px;
+        padding-left: 64px;
     }
 
     .technologies-list {
         margin-bottom: 164px;
-        margin-left: 64px;
+        margin-left: 0;
     }
 
     .technologies-item {
@@ -217,14 +216,14 @@ button:disabled:hover svg {
 
     .project-text {
         font-size: 44px;
-        margin-left: 64px;
         max-width: 494px;
+        margin-left: 0;
     }
 
     .project-link {
         width: 177px;
         height: 55px;
-        margin-left: 64px;
+        margin-left: 0;
     }
 
     .project-picture-div {
@@ -268,10 +267,6 @@ button:disabled:hover svg {
     .project-picture-div {
         border-top-right-radius: 24px;
         border-bottom-left-radius: 0;
-    }
-
-    .project-nav-div {
-        justify-content: flex-end;
     }
 }
 
