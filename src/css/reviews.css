@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 64px;
 }
 .reviews div {
   max-width: 100%;
@@ -123,6 +124,9 @@ button:disabled svg {
   .reviews-list {
     max-width: 768px;
   }
+  .reviews {
+    padding-bottom: 96px;
+  }
 }
 @media (min-width: 1440px) {
   .reviews-list {
@@ -130,5 +134,8 @@ button:disabled svg {
   }
   .reviews-list li {
     max-width: 332px;
+  }
+  .reviews {
+    padding-bottom: 164px;
   }
 }
