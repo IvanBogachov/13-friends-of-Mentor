@@ -4,8 +4,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
   padding-top: 281px;
   padding-bottom: 32px;
+  margin-bottom: 64px;
 }
 @media only screen and (min-resolution: 192dpi) {
   .hero {
@@ -86,6 +88,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 300px;
+    
   }
   .container {
     max-width: 768px;
@@ -119,6 +122,9 @@
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 96px;
+  }
   .container {
     max-width: 1440px;
   }
