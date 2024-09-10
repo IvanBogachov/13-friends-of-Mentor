@@ -5,10 +5,16 @@
 .header-container {
   position: absolute;
   top: 32px;
-  left: 16px;
+  left: 5px;
   right: 16px;
   display: flex;
   justify-content: space-between;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .logo {
@@ -37,6 +43,12 @@
   background-color: transparent;
 }
 
+@media screen and (min-width: 375px) {
+  .header-container {
+    left: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
     display: block;
@@ -63,7 +75,7 @@
     left: auto;
     z-index: 99999999;
     transform: translateY(-200%);
-    transition: transform 2000ms linear;
+    transition: transform 1000ms linear;
   }
 
   .modal-container.is-activation {
@@ -114,7 +126,10 @@
 }
 
 @media screen and (min-width: 1158px) {
-/*  .header-container {} */
+  .header-container {
+    left: 0;
+    right: 0;
+  }
 }
 
 .burger-modal-window {
@@ -129,7 +144,7 @@
   background-repeat: no-repeat;
   overflow-y: auto;
   transform: translateX(100%);
-  transition: transform 2000ms linear;
+  transition: transform 1000ms linear;
 }
 
 .burger-modal-window.is-open {
@@ -181,7 +196,6 @@
   letter-spacing: -0.02em;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  
 }
 
 .mobile-menu-link:hover,
