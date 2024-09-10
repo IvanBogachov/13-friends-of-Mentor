@@ -17,10 +17,7 @@ accordionAbout.open(0);
 
 const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
-  speed: 1000,
-  slidesPerGroup: 1,
-  autoHeight: true,
-  setWrapperSize: true,
+  speed: 750,
   modules: [Navigation, Keyboard, Mousewheel],
   simulateTouch: true,
   grabCursor: true,
@@ -32,24 +29,22 @@ const swiperAbout = new Swiper('.swiper-about', {
     enabled: true,
     onlyInViewport: false,
   },
-  slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 0,
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
     375: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 0,
     },
     1440: {
-      slidesPerView: 5,
-      spaceBetween: 20,
+      slidesPerView: 6,
     },
   },
 
@@ -76,7 +71,6 @@ const swiperAbout = new Swiper('.swiper-about', {
     },
   },
 });
-
 document
   .querySelector('.swiper-button-next-about')
   .addEventListener('click', () => {
