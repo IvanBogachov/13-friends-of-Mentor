@@ -13,7 +13,7 @@ height: 24px;
 margin-bottom: 32px;
 }
 .bnf-right {
-width: 344px;
+width: 100%;
 height: 1215px;
 }
 .list-bnf {
@@ -37,8 +37,6 @@ height: 48px;
 margin-bottom: 64px;
 } 
 .svg-bnf {
-width: 24px;
-height: 24px;
 padding: 12px;
 } 
 .name-bnf {
@@ -80,6 +78,7 @@ color: #fafafa;
 background-color: transparent;
 margin-top: 32px;
 margin-right: 157px;
+transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-bnf:hover,
 .btn-bnf:focus{
