@@ -4,7 +4,6 @@ padding-bottom: 64px;
 .content {
 display: flex;
 flex-direction: column;
-
 }
 .title-bnf {
 font-weight: 600;
@@ -15,11 +14,9 @@ text-transform: uppercase;
 color: rgba(250, 250, 250, 0.4);
 margin-bottom: 32px;
 }
-
 .bnf-right {
 display: flex;
 flex-direction: column;
-   
 }
 .list-bnf {
 display: flex;
@@ -108,14 +105,17 @@ padding-bottom: 164px;
 } 
 .content {
 width: 1375px;
-display: flex;
-justify-content: space-between;
 }
-.bnf-right {
+.bnf-right {  
 width: 680px;
 } 
-
-   
+.bnf-wrap{
+display: flex;
+justify-content: space-between;
+  } 
+.container-bnf{
+width: 284px;
+}
 }
 
   
