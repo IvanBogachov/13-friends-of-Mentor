@@ -38,7 +38,7 @@ form input:-webkit-autofill {
 
 .title-text-footer {
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 40px;
     line-height: 1;
     letter-spacing: -0.03em;
@@ -68,14 +68,14 @@ form input:-webkit-autofill {
 }
 
  .email-message {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: #3cbc81;
 }
 .error{
-    font-weight: 500;
+    font-weight: 400;
         font-size: 14px;
         line-height: 1.28571;
         letter-spacing: -0.02em;
@@ -108,7 +108,7 @@ input[type="email"],
 input[type="text"] {
     text-overflow: ellipsis;
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
@@ -135,7 +135,7 @@ input[type="text"]::placeholder {
 
 .btn-footer-send {
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
@@ -161,7 +161,7 @@ input[type="text"]::placeholder {
 .contact-item-footer {
     font-style: normal;
     font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     letter-spacing: -0.02em;
     color: inherit;
@@ -205,18 +205,18 @@ input[type="text"]::placeholder {
             
         }
     .title-text-footer {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 64px;
         line-height: 1;
         letter-spacing: -0.03em;
     }
     .title-footer {
-            margin-bottom:  64px;
+        margin-bottom: 18px;
         }
 
     input[type="email"],
     input[type="text"] {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: -0.02em;
@@ -225,7 +225,7 @@ input[type="text"]::placeholder {
     .btn-footer-send{
         width: 150px;
         height: 150px;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         letter-spacing: -0.02em;
         /* margin-left: 86px; */
@@ -234,14 +234,15 @@ input[type="text"]::placeholder {
     .input-container{
         display: flex;
         flex-direction: column;
-        margin-right: 32px;
+        /* margin-right: 32px; */
         
     }
     .form-footer{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        gap: 32px; 
+        /* gap: 32px;  */
+        justify-content: space-between;
     }
 
     .contact-item-footer{
@@ -249,7 +250,7 @@ input[type="text"]::placeholder {
         padding: 18px 32px;
         
 
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         letter-spacing: -0.02em;
         }
@@ -281,12 +282,17 @@ input[type="text"] {
 } */
     
 .form-footer {
-    gap: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.btn-footer-send{
-margin-left: 86px;
-}   
+.input-container {
+    margin-right: 32px;
+}
+
+input[name="comment"] {
+    margin-right: 86px;
+}
 }
 
 
@@ -330,7 +336,7 @@ margin-left: 86px;
 }
 
 .modal-title{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.02em;
@@ -340,7 +346,7 @@ margin-left: 86px;
 }
 
 .modal-text{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
