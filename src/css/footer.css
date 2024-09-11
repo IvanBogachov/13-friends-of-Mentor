@@ -211,7 +211,7 @@ input[type="text"]::placeholder {
         letter-spacing: -0.03em;
     }
     .title-footer {
-            margin-bottom:  64px;
+        margin-bottom: 18px;
         }
 
     input[type="email"],
@@ -234,14 +234,15 @@ input[type="text"]::placeholder {
     .input-container{
         display: flex;
         flex-direction: column;
-        margin-right: 32px;
+        /* margin-right: 32px; */
         
     }
     .form-footer{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        gap: 32px; 
+        /* gap: 32px;  */
+        justify-content: space-between;
     }
 
     .contact-item-footer{
@@ -281,12 +282,17 @@ input[type="text"] {
 } */
     
 .form-footer {
-    gap: 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.btn-footer-send{
-margin-left: 86px;
-}   
+.input-container {
+    margin-right: 32px;
+}
+
+input[name="comment"] {
+    margin-right: 86px;
+}
 }
 
 
