@@ -1,0 +1,113 @@
+.covers-section-title {
+  display: none;
+}
+
+.covers {
+  background-image: url(/img/img-covers/covers-background-min.png);
+  position: relative;
+  height: 508px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 64px;
+}
+
+.covers-plural-list {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
+
+.covers-list {
+  display: flex;
+  margin-bottom: 25px;
+  transform: rotate(11deg);
+}
+
+.covers-item {
+  flex-shrink: 0;
+  margin-right: 25px;
+  display: inline-block;
+  width: 283px;
+  height: 163px;
+
+  animation: none; /* Вимкнути анімацію за замовчуванням */
+}
+
+.covers-item.active {
+  animation-name: marqueeLine;
+  animation-duration: 35s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.covers-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  50% {
+    transform: translateX(-920%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers {
+    height: 960px;
+    margin-bottom: 96px;
+  }
+
+  .covers-item {
+    width: 544px;
+    height: 314px;
+    animation-duration: 45s;
+  }
+
+  @keyframes marqueeLine {
+    0% {
+      transform: translateX(-20%);
+    }
+
+    50% {
+      transform: translateX(-800%);
+    }
+
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers {
+    margin-bottom: 164px;
+  }
+
+  .covers-item {
+    animation-duration: 60s;
+  }
+
+  @keyframes marqueeLine {
+    0% {
+      transform: translateX(-20%);
+    }
+
+    50% {
+      transform: translateX(-750%);
+    }
+
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+}
