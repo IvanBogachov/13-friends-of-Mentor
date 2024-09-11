@@ -7,6 +7,12 @@ const btn = document.querySelector(".btn");
 const elem = document.querySelector("main");
 const links = document.querySelectorAll('a[href*="#"]');
 
+const deleteWhenPressingKey = (event) => {
+  if (event.key === 'Escape') {
+    menuEl.classList.remove('is-activation');
+  }
+}
+
 const disableScroll = () => {
   body.classList.add("disable-scroll")
 }
@@ -50,4 +56,5 @@ const openingAndClosingTheModalWindow = () => {
 btn.addEventListener("click", menuItem);
 burgerButton.addEventListener("click", openingAndClosingTheModalWindow);
 closeButton.addEventListener("click", openingAndClosingTheModalWindow);
+btn.addEventListener('keydown', deleteWhenPressingKey);
 burgerButton.addEventListener("click", disableScroll);
