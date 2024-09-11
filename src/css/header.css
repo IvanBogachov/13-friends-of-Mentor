@@ -42,6 +42,15 @@
   background-color: transparent;
 }
 
+.icon-burger {
+  stroke:#fafafa;
+}
+
+.icon-burger:hover,
+.icon-burger:focus {
+  stroke:#f15059;
+}
+
 @media screen and (min-width: 375px) {
   .header-container {
     left: 0;
