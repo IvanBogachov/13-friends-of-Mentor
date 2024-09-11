@@ -1,3 +1,65 @@
-<section class="footer together">
-  
-</section>
+<footer id="footer" class="footer together section-animation">
+    <div class="container footer-container">
+        <div class="title-footer">
+            <div class="img-span">
+                <picture>
+                    <source 
+                    srcset="./img/together/work-together-dextop&tablet-@1x-img.jpg 1x,
+                            ./img/together/work-together-dextop&tablet-@2x-img.jpg 2x"  
+                    media="(min-width: 767px)">
+                    <img class="img-footer" 
+                        srcset="./img/together/work-together-mobile-@1x-img.jpg 1x,
+                                ./img/together/work-together-mobile-@2x-img.jpg 2x
+                        " src="./img/together/work-together-mobile-@1x-img.jpg" 
+                        alt="Jefferson" 
+                        width="44" 
+                        height="44" 
+                        />
+                </picture>
+                <h2 class="title-text-footer">
+                    Let’s <span class="work-span">work</span>
+                </h2>
+            </div>
+            <h2 class="title-text-footer">together</h2>
+        </div>
+        <form class="form-footer js-form-footer">
+            <div class="input-container">
+                <input type="email" name="email" class="js-email-input" placeholder="clients@gmail.com" required
+                    title="Invalid email, try again" />
+                <span class="email-message js-email-message"></span>
+            </div>
+        
+            <input type="text" name="comment" placeholder="comments" required maxlength="255"
+                title="Message should not exceed 255 characters" />
+            <button class="btn-footer-send js-btn-footer" type="submit">Send</button>
+        </form>
+        <address class="contacts-footer">
+            <ul class="contacts-list-footer">
+                <li class="contact-item-footer">
+                    <a href="mailto:lloydjefferson@gmail.com" class="email-footer" target="_blank">
+                        lloydjefferson@gmail.com
+                    </a>
+                </li>
+                <li class="contact-item-footer">
+                    <a href="tel:+3801111111111" class="tel-footer" target="_blank">
+                        +380 11 1111 11 11
+                    </a>
+                </li>
+            </ul>
+        </address>
+        <!-- Модальне вікно -->
+        <div class="modal">
+            <div class="modal-content">
+                <button class="btnCloseModal">
+                    <svg class="modal-close">
+                        <use href="/img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal-title"></h2>
+                <p class="modal-text"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
