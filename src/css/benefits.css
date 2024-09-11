@@ -1,4 +1,4 @@
-.benefits {
+.container {
 padding-bottom: 64px;
 }
 .title-bnf {
@@ -83,7 +83,7 @@ color: #1C1D20;
 
 
 @media screen and (min-width: 768px){
-.benefits {
+.container{
 padding-bottom: 96px;
 }
 .list-bnf {
@@ -98,21 +98,12 @@ flex-basis: calc((100%-16px)/2);
  
 
 @media screen and (min-width: 1440px)  {
-.benefits {
+.container {
 padding-bottom: 164px;
-align-items: flex-start;
-justify-content: flex-start;
+}
 
 
-}
-.bnf-wrapper {
-display: flex;
-justify-content: space-between;
-}
- 
-
-}
-   
+}  
 
 
 
