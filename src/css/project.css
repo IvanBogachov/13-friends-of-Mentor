@@ -198,6 +198,16 @@ button:disabled:hover svg {
         width: auto;
     }
 
+    #project-second-swiper-id {
+        margin-bottom: 64px;
+        width: auto;
+    }
+
+    #project-third-swiper-id {
+        margin-bottom: 64px;
+        width: auto;
+    }
+
     .project-card {
         display: flex;
         flex-direction: column;
@@ -259,6 +269,18 @@ button:disabled:hover svg {
     }
 
     #project-swiper-id {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    #project-second-swiper-id {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    #project-third-swiper-id {
         display: flex;
         justify-content: space-between;
         width: auto;
