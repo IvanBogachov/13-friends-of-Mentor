@@ -116,6 +116,7 @@ flex-basis: calc((100%-16px)/2);
 @media screen and (min-width: 1440px)  {
 .container {
 padding-bottom: 164px;
+
 }
 
 
