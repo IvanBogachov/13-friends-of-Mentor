@@ -19,29 +19,24 @@ const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
   speed: 750,
   modules: [Navigation, Keyboard, Mousewheel],
-  simulateTouch: true,
   grabCursor: true,
+  simulateTouch: true,
+  keyboard: {
+    enabled: true,
+  },
   slideActiveClass: 'active',
   navigation: {
     nextEl: '.about-swiper-button',
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  spaceBetween: 0,
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 0,
     },
     375: {
       slidesPerView: 2,
-      spaceBetween: 0,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 0,
     },
     1440: {
       slidesPerView: 6,
