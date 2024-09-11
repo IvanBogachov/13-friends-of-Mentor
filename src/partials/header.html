@@ -1,3 +1,72 @@
 <header class="header">
-  
+  <div class="header-container container">
+    <nav class="page-navigation">
+      <a class="logo" href="./index.html">
+        <img
+          class="logo-img"
+          srcset="
+            ./img/header-img/mobile.header.img.png    1x,
+            ./img/header-img/mobile.header.img@2x.png 2x
+          "
+          src="./img/header-img/mobile.header.img.png"
+          alt="jefferson"
+        />
+        jefferson*
+      </a>
+      <ul class="menu">
+        <li class="menu-container">
+          <button class="btn">Menu</button>
+          <div class="modal-container">
+            <ul class="hidden-menu">
+              <li class="menu-item">
+                <a class="menu-link" href="#about">About me</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#benefits">Benefits</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#project">Projects</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a class="order-link" href="#footer">Order the project</a>
+    </nav>
+    <button class="icon-burger-btn">
+      <svg class="icon-burger" width="24" height="24">
+        <use href="/img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <!--========modal-overlay=======-->
+  <div class="burger-modal-window">
+    <div class="modal-window">
+      <button class="modal-window-btn" type="button">
+        <svg class="modal-window-icons-svg" width="28" height="28">
+          <use href="/img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-page-navigation">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#about">About me</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#project">Projects</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="mobile-order-link" href="#footer">Order the project</a>
+    </div>
+  </div>
 </header>
