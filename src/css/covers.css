@@ -3,30 +3,32 @@
 }
 
 .covers {
-  background-image: url(/img/img-covers/covers-background-min.png);
-  position: relative;
-  height: 508px;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 
 .covers-plural-list {
-  position: absolute;
-  right: -800px;
-  left: 0;
+  background-image: url(/img/img-covers/covers-background-min.png);
+  background-size: 200%;
   overflow: hidden;
 }
 
 .covers-list {
   display: flex;
   margin-bottom: 25px;
+  gap: 25px;
+
   transform: rotate(11deg);
 }
 
+.covers-list:last-child {
+  margin-bottom: 0;
+}
+
 .covers-item {
+  display: flex;
   flex-shrink: 0;
-  margin-right: 25px;
   display: inline-block;
   width: 283px;
   height: 163px;
@@ -63,8 +65,11 @@
 
 @media screen and (min-width: 768px) {
   .covers {
-    height: 960px;
-    margin-bottom: 96px;
+    padding-bottom: 96px;
+  }
+
+  .covers-plural-list {
+    background-size: 150%;
   }
 
   .covers-item {
@@ -90,7 +95,11 @@
 
 @media screen and (min-width: 1440px) {
   .covers {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
+  }
+
+  .covers-plural-list {
+    background-size: 100%;
   }
 
   .covers-item {
