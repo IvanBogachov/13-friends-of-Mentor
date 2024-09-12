@@ -83,13 +83,15 @@
   }
   .ben-cont {
     display: flex;
-    gap: 412px;
+    justify-content: space-between;
   }
   .my-bnf {
-    width: calc((100% - 32px) / 2);
     max-width: 332px;
   }
   .list-bnf {
     max-width: 680px;
+  }
+  .title-bnf {
+    margin-bottom: 0;
   }
 }
