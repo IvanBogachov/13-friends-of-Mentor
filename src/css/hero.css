@@ -97,7 +97,7 @@
   }
   .hero-title {
     
-    margin-bottom: 187px;
+    margin-bottom: 237px;
     width: 632px;
     font-size: 90px;
   }
@@ -130,7 +130,7 @@
 /* Styles for desktop devices */
 @media only screen and (min-width: 1200px) {
   .hero {
-    margin-bottom: 96px;
+    /* margin-bottom: 96px; */
     background-image: url('../img/hero/red-hero-bg-desk.png');
   }
   .container {
