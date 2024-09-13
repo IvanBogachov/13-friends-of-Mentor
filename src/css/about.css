@@ -261,7 +261,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .about {
-    padding-top: 96px;
+    /* padding-top: 96px; */
     padding-bottom: 0px;
   }
   .about-text-content {
