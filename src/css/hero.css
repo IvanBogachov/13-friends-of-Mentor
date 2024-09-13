@@ -130,7 +130,7 @@
 /* Styles for desktop devices */
 @media only screen and (min-width: 1200px) {
   .hero {
-    /* margin-bottom: 96px; */
+    margin-bottom: 96px;
     background-image: url('../img/hero/red-hero-bg-desk.png');
   }
   .container {
