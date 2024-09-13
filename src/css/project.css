@@ -1,3 +1,6 @@
+.project {
+    padding-bottom: 64px;
+}
 .project-header {
     display: block;
     margin-bottom: 32px;
@@ -185,6 +188,9 @@ button:disabled:hover svg {
 }
 
 @media screen and (min-width: 768px) {
+    .project {
+    padding-bottom: 96px;
+}
     #project-swiper-id {
         width: auto;
     }
@@ -254,6 +260,9 @@ button:disabled:hover svg {
 }
 
 @media screen and (min-width: 1440px) {
+    .project {
+        padding-bottom: 164px;
+    }
     #project-swiper-id {
         display: flex;
         justify-content: space-between;
