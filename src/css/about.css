@@ -15,6 +15,14 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.swiper-about {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
 .about-container {
   width: auto;
 }
@@ -78,6 +86,7 @@ body {
 .arrow-svg {
   width: 18px;
   height: 18px;
+  transition: transform 0.3s ease-in;
 }
 .accordion-about__description {
   font-size: 16px;
@@ -145,7 +154,7 @@ body {
   height: 130px;
   margin-top: 32px;
 }
-.about-me-skills-wrapper .swiper {
+.about-me-skills-wrapper .swiper-about {
   margin-left: 0;
   margin-right: 0;
   width: 260px;
@@ -161,13 +170,13 @@ body {
   width: 260px !important;
   height: 130px;
 }
-.swiper .swiper-slide-about {
+.swiper-about .swiper-slide-about {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   border: 1px solid #fafafa66;
 }
-.swiper .swiper-slide-item-about {
+.swiper-about .swiper-slide-item-about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,8 +215,6 @@ body {
     right: 50px;
   }
 }
-@media screen and (min) {
-}
 @media screen and (min-width: 768px) {
   .about {
     padding-bottom: 96px;
@@ -216,18 +223,18 @@ body {
     width: 704px;
     height: 200px;
   }
-  .about-me-skills-wrapper .swiper {
+  .about-me-skills-wrapper .swiper-about {
     width: 600px;
     height: 201px;
   }
   .swiper-slide-about {
     margin-right: 0 !important;
   }
-  .swiper .swiper-slide-about {
+  .swiper-about .swiper-slide-about {
     width: 200px !important;
     height: 200px;
   }
-  .swiper .swiper-slide-item-about {
+  .swiper-about .swiper-slide-item-about {
     width: 200px;
     height: 200px;
   }
@@ -245,6 +252,11 @@ body {
     width: 40px;
     height: 40px;
     right: -5px;
+  }
+  .swiper-slide-item-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -289,9 +301,8 @@ body {
     height: 200px;
     margin-top: 0;
   }
-  .about-me-skills-wrapper .swiper {
+  .about-me-skills-wrapper .swiper-about {
     width: 1200px;
-    height: 300px;
   }
   .swiper-wrapper-about {
     font-size: 20px;
@@ -303,6 +314,11 @@ body {
     width: 1200px !important;
     height: 130px;
   }
+  .swiper-slide-item-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .about-me-skills-wrapper .swiper-button-next-about {
     width: 40px;
     height: 40px;
@@ -311,104 +327,7 @@ body {
   .about {
     padding-bottom: 164px;
   }
-}
-
-/* .swiper-about {
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-  display: block;
-}
-.swiper .swiper-button-next-about {
-  border: none;
-  position: absolute;
-}
-.swiper-about .swiper-wrapper-about {
-  flex-direction: row;
-  width: 260px !important;
-}
-.swiper-about-by-id {
-  display: flex;
-}
-.swiper-about .swiper-slide-about {
-  background-color: transparent;
-  width: 130px !important;
-  height: 130px;
-}
-.swiper-about .swiper-button-next-about {
-  display: flex;
-}
-.swiper-about .swiper-button-next-about {
-  position: absolute;
-  right: -4px;
-  top: 95px;
-}
-.swiper-slide-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px !important;
-  height: 130px;
-  border-radius: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-}
-.swiper-wrapper-about {
-  margin-top: 32px;
-}
-.swiper-about .swiper-button-next-about:after {
-  content: '';
-}
-.about-me-swiper-icon {
-  fill: transparent;
-  stroke: #3b3b3b;
-  width: 28px;
-  height: 28px;
-}
-.swiper-slide-item.active-slide {
-  background-color: #ed3b44;
-  transition: background-color 0.3s ease;
-} */
-/* FOR SCREENS MEDIA 768px */
-
-/* .swiper-slide-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px !important;
-    height: 200px;
-    border-radius: 100%;
+  .about-img-content {
+    margin-bottom: 0;
   }
-  .swiper-slide-about {
-    margin-right: auto;
-  }
-  .swiper-about .about-me-swiper-icon {
-    width: 40px;
-    height: 40px;
-  }
-  .swiper-about .swiper-button-next-about {
-    top: 132px;
-  }
-  .swiper-about .swiper-slide-about {
-    background-color: transparent;
-    width: 130px !important;
-    height: 200px;
-  } */
-
-/* .swiper-wrapper-about {
-    margin-top: 0;
-  }
-  .swiper-about .swiper-slide-about {
-    background-color: transparent;
-    width: 130px !important;
-    height: 200px;
-  }
-  .swiper-wrapper {
-    width: 1312px;
-    padding-left: 32px;
-    padding-right: 32px;
-  } */
+}

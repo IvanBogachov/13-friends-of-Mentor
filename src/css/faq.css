@@ -1,5 +1,5 @@
 .faq-section-title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -19,6 +19,13 @@
   background-color: #1c1d20;
   margin-top: 0;
   padding: 0 0 20px 0;
+}
+.faq .ac .faq-item-btn-icon {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq .ac.is-active .faq-item-btn-icon {
+  transform: rotate(180deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -46,7 +53,7 @@
 
 .faq-item-title.ac-header .faq-item-btn.ac-trigger {
   font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;

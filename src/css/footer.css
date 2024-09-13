@@ -112,7 +112,7 @@ input[type="text"] {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
+    color: #fafafa;
     background-color: transparent;
     border: none;
     /* Видаляє рамку навколо інпуту */
@@ -228,6 +228,7 @@ input[type="text"]::placeholder {
         font-weight: 400;
         font-size: 16px;
         letter-spacing: -0.02em;
+        margin-top: 0px;
         /* margin-left: 86px; */
     }
 

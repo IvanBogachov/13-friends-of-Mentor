@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import { Keyboard, Navigation } from 'swiper/modules';
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
@@ -18,8 +18,9 @@ accordionAbout.open(0);
 const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
   speed: 750,
-  modules: [Navigation, Keyboard, Mousewheel],
+  modules: [Navigation, Keyboard],
   grabCursor: true,
+  slidesPerView: 1,
   simulateTouch: true,
   keyboard: {
     enabled: true,
@@ -42,7 +43,6 @@ const swiperAbout = new Swiper('.swiper-about', {
       slidesPerView: 6,
     },
   },
-
   on: {
     init: function () {
       let activeSlide = this.slides[this.activeIndex].querySelector(
